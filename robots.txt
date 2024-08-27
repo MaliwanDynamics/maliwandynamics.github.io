@@ -1,0 +1,8 @@
+---
+---
+
+User-agent:*
+Disallow: /404$
+Disallow: /about$
+
+Sitemap: {{ "sitemap.xml" | absolute_url }}
