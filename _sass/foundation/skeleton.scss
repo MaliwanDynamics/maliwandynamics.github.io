@@ -10,7 +10,8 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 .main-container {
-    padding: $master-padding;
+    // margin: $master-padding;
+    // padding-right: $master-padding;
     width: 100%;
 }
 
@@ -18,12 +19,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $decor-font-family;
 }
 
-p {
+p, li {
     font-size: 16pt;
 }
 
 .skeleton-container {
-    max-width: 1200px;
+    max-width: $master-content-width;
     margin: 0 auto;
 }
 
