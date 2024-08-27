@@ -1,3 +1,49 @@
-theme: jekyll-theme-minimal
+
 title: Maliwan Dynamics
-description: Maliwan Dynamics
+# email: your-email@example.com
+
+description:
+  Maliwan Dynamics
+
+statement: More Knowledge More Freedom
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://maliwandynamics.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+instagram_username: maliwandynamics
+# twitter_username: jekyllrb
+# github_username:  jekyll
+
+# Build settings
+# theme: 
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+header_pages:
+  - index.md
+  - about.md
+
+yt_url_base: "https://youtube.com/"
+yt_url_watch: https://www.youtube.com/embed/
+yt_img_url_base: "https://img.youtube.com/vi/"
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,0 +1,81 @@
+
+
+@mixin flexium {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin blocking {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-3 {
+    width: calc(100% / 3);
+}
+
+.col-3-fw {
+    width: calc(100% / 3);
+    @include flexium;
+    flex-wrap: nowrap;
+}
+
+.col-3-f {
+    width: calc(100% / 3);
+    @include flexium;
+}
+
+.col-2 {
+    justify-content: center;
+    width: calc(100% / 2);
+}
+
+.col-b {
+    @include blocking;
+    width: calc(100% / 2);
+    // width: 100%;
+}
+
+.col-2-fw {
+    width: calc(100% / 2);
+    @include flexium;
+}
+
+.col-2-f {
+    width: calc(100% / 2);
+    @include flexium;
+    flex-wrap: nowrap;
+}
+
+
+.row-fw {
+    @include flexium;
+    width: 100%;
+}
+
+.cent {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.no-pointer-event {
+    pointer-events: none;
+}

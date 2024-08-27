@@ -1,0 +1,28 @@
+
+.home-container {
+    margin: 0 auto;
+    max-width: $master-content-width;
+}
+
+.home-header {
+    margin: 0 auto;
+    max-width: $master-content-width;
+}
+
+.home-content {
+    margin: 0 auto;
+    max-width: $master-content-width;
+}
+
+// .home-img { 
+//     animation-name: floating;
+//     animation-duration: 4s;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: ease-in-out;
+// }
+
+// @keyframes floating {
+//     0% { transform: translate(0, 0px); }
+//     50% { transform: translate(0, 30px); }
+//     100% { transform: translate(0, -0px); }
+// }

@@ -1,0 +1,25 @@
+---
+layout: skeleton
+---
+<div class="no-select home-container">
+
+  <div class="row-fw">
+
+    <div class="col-2">
+
+      {%- if page.title -%}
+      <h1 class="home-header">{{ page.title }}</h1>
+      <p>{{ site.statement | escape }}</p>
+      {%- endif -%}
+
+    </div>
+
+    <div class="no-pointer-event col-2-f">
+      <img class="home-img w-100" src="/assets/img/logo/med-logo.png" />
+    </div>
+
+  </div>
+
+  <div class="home-content">{{ content }}</div>
+
+</div>
