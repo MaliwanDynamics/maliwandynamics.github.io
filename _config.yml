@@ -10,14 +10,9 @@ statement: More Knowledge More Freedom
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://maliwandynamics.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-instagram_username: maliwandynamics
-# twitter_username: jekyllrb
-# github_username:  jekyll
-
 # Build settings
-# theme: 
 plugins:
-  - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo-tag
 
 header_pages:
