@@ -10,8 +10,9 @@
     width: 100%;
     margin: 0 auto;
     height: $header-height;
+    // box-shadow: 5px 5px 5px whitesmoke;
 
-    box-shadow: 5px 5px 5px whitesmoke;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .header-nav {
