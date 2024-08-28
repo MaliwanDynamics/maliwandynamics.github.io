@@ -6,7 +6,6 @@
 
 .home-header {
     margin: 0 auto;
-    max-width: 100%;
 }
 
 .home-content {
@@ -15,9 +14,11 @@
 }
 
 .title-container {
+    position: relative;
     margin: 0 auto;
-    width: 70%;
+    width: auto;
 }
+
 
 // .home-img { 
 //     animation-name: floating;
@@ -32,16 +33,84 @@
 //     100% { transform: translate(0, -0px); }
 // }
 
+.square {
+    height: 100%;
+    width: 12px;
+
+    background-color: cyan;
+    border-radius: 5px;
+    position: absolute;
+
+    z-index: 10;
+
+    opacity: 0;
+}
+
+#square1 {
+    left: 0px;
+    animation: spinner-effect 2.1s ease .7s infinite;
+}
+
+#square2 {
+    left: 25px;
+    animation: spinner-effect 2.3s ease .7s infinite;
+}
+
+#square3 {
+    left: 50px;
+    animation: spinner-effect 1.5s ease .7s infinite;
+}
+
+#square4 {
+    left: 75px;
+    animation: spinner-effect 1.2s ease .7s infinite;
+}
+
+#square5 {
+    left: 100px;
+    animation: spinner-effect 1s ease .7s infinite;
+}
+
+#square1:hover, #square2:hover, #square3:hover, #square4:hover, #square5:hover {
+    animation-play-state: paused;
+    // -moz-animation-play-state: paused;
+}
+
 // TODO: wrap instead of dynamic text size
 @media (max-width: 720px) {
     .home-container h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .home-container p {
         font-size: 16px;
     }
 
+    .title-container {
+        width: 80%;
+    }
+
+    .square {
+        width: 9px;
+    }
 }
 
+@keyframes spinner-effect {
 
+    0% {
+        opacity: 1;
+        height: 5px;
+    }
+
+    60% {
+        opacity: 1;
+        height: 70px;
+        opacity: .5;
+    }
+
+    100% {
+        opacity: .2;
+        height: 5px;
+    }
+
+}

@@ -67,8 +67,17 @@
     width: 100%;
 }
 
+.w-90 {
+    width: 90%;
+}
+
 .pad-b-10 {
     padding-bottom: 100px;
+}
+
+.h-50vh {
+    height: 50vh;
+    min-height: 100%;
 }
 
 .no-select {
@@ -83,3 +92,4 @@
 .no-pointer-event {
     pointer-events: none;
 }
+

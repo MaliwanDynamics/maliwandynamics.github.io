@@ -1,10 +1,14 @@
 ---
-layout: page
-title: About
-permalink: /about
+layout: post
+
+title: First Post
+imgUrl: /assets/img/404gifthing.gif
+
+date: 2024-08-28 1:47:04 -0400
+categories: blog
 ---
 
-What the heck is the point of this website?
+My first post and what the heck is the point of this website?
 
 Honestly, I do not know what the point is for sure yet. I trust the general direction will form on its own as time goes on.  
 
