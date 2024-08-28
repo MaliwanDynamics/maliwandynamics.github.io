@@ -6,12 +6,17 @@
 
 .home-header {
     margin: 0 auto;
-    max-width: $master-content-width;
+    max-width: 100%;
 }
 
 .home-content {
     margin: 0 auto;
-    max-width: $master-content-width;
+    max-width: 100%;
+}
+
+.title-container {
+    margin: 0 auto;
+    width: 70%;
 }
 
 // .home-img { 
@@ -26,3 +31,17 @@
 //     50% { transform: translate(0, 30px); }
 //     100% { transform: translate(0, -0px); }
 // }
+
+// TODO: wrap instead of dynamic text size
+@media (max-width: 720px) {
+    .home-container h1 {
+        font-size: 18px;
+    }
+
+    .home-container p {
+        font-size: 16px;
+    }
+
+}
+
+

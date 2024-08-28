@@ -3,13 +3,16 @@ layout: skeleton
 ---
 <div class="no-select home-container">
 
-  <div class="row-fw">
+  <div class="row-fw pad-b-10">
 
     <div class="col-2">
 
       {%- if page.title -%}
-      <h1 class="home-header">{{ page.title }}</h1>
+      <div class="title-container">
+        <h1 class="home-header">{{ page.title }}</h1>
+      
       <p>{{ site.statement | escape }}</p>
+    </div>
       {%- endif -%}
 
     </div>
