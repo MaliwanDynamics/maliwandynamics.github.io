@@ -2,9 +2,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   {% seo %}
-
+  {% if page.videoId && site.yt_img_url_base %}
+  <meta property="og:image" content="{{ site.yt_img_url_base }}{{ page.videoId }}/0.jpg" />
+  {% else %}
+  <meta property="og:image" content="{{ site.url }}/assets/img/logo/med-logo.png" />
+  {% endif %}
   <link rel="stylesheet" href="/assets/css/style.css">
-
 </head>
