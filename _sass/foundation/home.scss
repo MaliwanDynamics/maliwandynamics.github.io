@@ -1,7 +1,6 @@
 
 .home-container {
     margin: 0 auto;
-    max-width: $master-content-width;
 }
 
 .home-header {
@@ -19,31 +18,16 @@
     width: auto;
 }
 
-
-// .home-img { 
-//     animation-name: floating;
-//     animation-duration: 4s;
-//     animation-iteration-count: infinite;
-//     animation-timing-function: ease-in-out;
-// }
-
-// @keyframes floating {
-//     0% { transform: translate(0, 0px); }
-//     50% { transform: translate(0, 30px); }
-//     100% { transform: translate(0, -0px); }
-// }
-
 .square {
     height: 100%;
     width: 12px;
+    height: 5px;
 
     background-color: cyan;
     border-radius: 5px;
     position: absolute;
 
     z-index: 10;
-
-    opacity: 0;
 }
 
 #square1 {
@@ -73,7 +57,6 @@
 
 #square1:hover, #square2:hover, #square3:hover, #square4:hover, #square5:hover {
     animation-play-state: paused;
-    // -moz-animation-play-state: paused;
 }
 
 // TODO: wrap instead of dynamic text size

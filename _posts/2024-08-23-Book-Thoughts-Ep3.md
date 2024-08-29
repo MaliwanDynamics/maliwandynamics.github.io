@@ -5,7 +5,6 @@ date: 2024-08-23 21:47:04 -0400
 videoId: WUepz4k3oKw
 categories: video
 ---
-
 - Edward Deci’s experiment revealed that monetary rewards can diminish intrinsic motivation.
 - Self-Determination Theory differentiates between intrinsic and extrinsic motivation.
 - Intrinsic motivation stems from personal fulfillment rather than external rewards.

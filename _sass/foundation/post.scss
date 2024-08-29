@@ -1,36 +1,24 @@
-
 .post-container {
-    padding-top: 10px;
-    padding-bottom: 10px;
     margin: 0 auto;
 }
 
 .post-header {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0 auto;
-    width: 100%;
+    border-bottom: 1px solid $master-accent-grey;
 }
 
 .post-content {
-    margin: 0 auto;
     width: 100%;
-}
-
-.seo-img {
-    display: none;
 }
 
 .video-iframe {
     margin: 0 auto;
-    width: 98%;
     height: 500px;
+    width: 100%;
 }
 
 @media (max-width: 720px) {
     .video-iframe {
-        min-height: 200px;
+        min-height: 230px;
         height: auto;
     }
 }
-

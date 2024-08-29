@@ -1,24 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
-
 {%- include head.html -%}
-
 <body id="lol-dis-body-id">
-
   {%- include header.html -%}
-
   <main class="main-container" aria-label="Content">
-
-    <div class="skeleton-container">
-
-      <div class="skeleton-content">{{ content }}</div>
-
-    </div>
-
+    <div id="skeleton">{{ content }}</div>
   </main>
-
   {% include footer.html %}
-
 </body>
-
 </html>

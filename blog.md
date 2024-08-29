@@ -3,7 +3,6 @@ layout: page
 title: Blog
 permalink: /blog
 ---
-
 <div class="post-card-container">
     {% for post in site.categories.blog %}
         {% if post.imgUrl %}

@@ -10,9 +10,9 @@
     background-image:
         linear-gradient(45deg,
             black 0 10%,
-            rgb(7, 227, 235) 0 25%,
+            $master-cyan 0 25%,
             white 0 37%,
-            rgb(255, 115, 0) 0 40%,
+            $master-orange 0 40%,
             white 0 42%,
             white 0 49%,
             white 0);
@@ -20,6 +20,8 @@
     width: 100%;
     margin: 0 auto;
     height: $header-height;
+
+    border-bottom: 1px solid $master-accent-grey;
 }
 
 .header-nav {
@@ -55,7 +57,7 @@
     font-size: 14pt;
     font-weight: bold;
     text-decoration: none;
-    color: rgb(94, 94, 94);
+    color: $master-accent-grey;
 
     text-shadow: 2px 2px whitesmoke;
 }
@@ -90,9 +92,7 @@
     user-select: none;
 }
 
-
 @media (max-width: 768px) {
-
     .menu {
         display: block;
         overflow: hidden;

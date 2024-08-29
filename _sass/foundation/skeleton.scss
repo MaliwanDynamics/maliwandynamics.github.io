@@ -1,4 +1,3 @@
-
 html {
     font-size: $master-font-size;
     font-family: $master-font-family;
@@ -10,13 +9,23 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 p {
-    padding-bottom: 15px;
+    padding: 1rem 0 1rem;
 }
 
 .main-container {
     // margin: $master-padding;
     // padding-right: $master-padding;
-    width: 100%;
+    margin: 0 auto;
+    max-width: $master-content-width;
+    background-color: white;
+    min-height: $content-scale;
+}
+
+// TODO: The min hight in the main container does not bump margin and padding in sub containers.
+#skeleton {
+    max-width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 h1 {
@@ -29,17 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p, li {
     font-size: 16pt;
-}
-
-.skeleton-container {
-    max-width: $master-content-width;
-    margin: 0 auto;
-}
-
-.skeleton-content {
-    max-width: $master-content-width;
-    margin: 0 auto;
-    min-height: $content-scale;
 }
 
 .footer-container {
@@ -60,4 +58,10 @@ p, li {
 .footer-col {
     width: 50%;
     min-width: 250px;
+}
+
+@media (max-width: 720px) {
+    h1 {
+        font-size: 1.6rem;
+    }
 }

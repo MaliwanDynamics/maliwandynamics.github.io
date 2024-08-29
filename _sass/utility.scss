@@ -1,5 +1,3 @@
-
-
 @mixin flexium {
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +49,6 @@
     flex-wrap: nowrap;
 }
 
-
 .row-fw {
     @include flexium;
     width: 100%;
@@ -92,4 +89,3 @@
 .no-pointer-event {
     pointer-events: none;
 }
-

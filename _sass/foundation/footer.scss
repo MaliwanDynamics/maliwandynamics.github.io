@@ -1,4 +1,7 @@
-
 footer {
-    height: 300px;
+    min-height: $footer-height;
+    width: $master-content-width;
+
+    margin: 0 auto;
+    background-color: white;
 }

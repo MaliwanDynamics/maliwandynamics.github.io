@@ -1,6 +1,4 @@
-
 .post-card-container {
-
     display: flex;
     flex-wrap: wrap;
 
@@ -11,26 +9,18 @@
 }
 
 .post-card {
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-
-    // margin: 0 auto;
 
     width: 80%;
     min-width: 50px;
 
     height: 290px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 
     cursor: pointer;
-
-    // transition: 1s;
-    // box-shadow: 4px 4px 4px whitesmoke;
 }
-
-
 
 .post-card p {
     text-align: center;
@@ -43,26 +33,10 @@
 }
 
 .post-card:hover {
-
-    // background-size: 120%;
-
-    // height: 130px;
-
-    // margin: 2px;
-    // width: 263px;
-    // height: 193px;
     box-shadow: 5px 5px 5px rgb(192, 192, 192);
 }
 
 .post-card:hover p {
-
-    // background-size: 120%;
-
-    // height: 130px;
-
-    // margin: 2px;
-    // width: 263px;
-    // height: 193px;
     color: black;
 }
 

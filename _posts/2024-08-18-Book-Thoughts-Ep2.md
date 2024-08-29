@@ -5,7 +5,6 @@ date: 2024-08-18 21:47:04 -0400
 videoId: N9dlwCOpKjA
 categories: video
 ---
-
 - Netflix faced many challenges in the begginging, including rejection from Blockbuster to buy the company.
 - Patty McCord introduced radical yet strategic changes in company culture.
 - Autonomy increases employee productivity and satisfaction.

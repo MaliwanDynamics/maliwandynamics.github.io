@@ -7,7 +7,6 @@ imgUrl: /assets/img/404gifthing.gif
 date: 2024-08-28 1:47:04 -0400
 categories: blog
 ---
-
 My first post and what the heck is the point of this website?
 
 Honestly, I do not know what the point is for sure yet. I trust the general direction will form on its own as time goes on.  
@@ -22,4 +21,4 @@ I have tried a few times in the past, but chickened out after a few months of bl
 
 So with this attempt, I refuse to get all weird and fancy by picking a niche or focusing on followers. The main goal is simply to continue learning and document it.
 
-If anyone gets value out of it, that's dope. If no one ever reads or watches a single lick of content, that's chill too.
+If anyone gets value out of it, that's dope.

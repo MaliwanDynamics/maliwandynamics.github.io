@@ -2,22 +2,18 @@
 layout: skeleton
 ---
 <article class="post-container" itemscope itemtype="http://schema.org/BlogPosting">
-
-  {% if page.videoId %}
-  <iframe class="video-iframe" allow="fullscreen" src="{{ site.yt_url_watch }}{{ page.videoId }}"></iframe>
-  {% endif %}
-  {% if page.imgUrl %}
-  <img width="100%" src="{{ page.imgUrl }}" alt="{{ site.altImgUrl }}"/>
-  {% endif %}
-
   <header class="post-header">
+    {% if page.videoId %}
+    <iframe class="video-iframe" allow="fullscreen" src="{{ site.yt_url_watch }}{{ page.videoId }}"></iframe>
+    {% endif %}
+    {% if page.imgUrl %}
+    <img width="100%" src="{{ page.imgUrl }}" alt="{{ site.altImgUrl }}"/>
+    {% endif %}
 
     {% include social-share.html %}
-
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
 
     <p class="post-meta">
-
       {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
       <time class="date-published" datetime="{{ page.date | escape }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
@@ -26,11 +22,9 @@ layout: skeleton
       {%- if page.modified_date -%}
       ~
       {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-
       <time class="date-modified" datetime="{{ mdate }}" itemprop="dateModified">
         {{ mdate | date: date_format }}
       </time>
-
       {%- endif -%}
 
       {%- if page.author -%}
@@ -42,7 +36,6 @@ layout: skeleton
       {% endfor %}
 
       {%- endif -%}
-
     </p>
 
   </header>
@@ -56,5 +49,4 @@ layout: skeleton
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-
 </article>

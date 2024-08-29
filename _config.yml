@@ -12,6 +12,11 @@ altImgUrl: /assets/img/med-logo-compressed.png
 
 permalink: pretty
 
+defaultAuthor: Maliwan Dynamics
+
+twitterUser: "@maliwandynamics"
+instagramUser: "@maliwandynamics"
+
 # Build settings
 plugins:
   - jekyll-sitemap

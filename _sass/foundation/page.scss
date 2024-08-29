@@ -1,19 +1,14 @@
-
 .page-container {
     margin: 0 auto;
-    max-width: $master-content-width;
+    padding-bottom: 25px;
+    padding-top: 25px
 }
 
 .page-header {
     margin: 0 auto;
-    // width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
     text-align: center;
 }
 
 .page-content {
-    margin: 0 auto;
     width: 100%;
 }

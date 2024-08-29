@@ -1,0 +1,18 @@
+.share-box {
+    display: inline-flex;
+    margin: 5px;
+    margin: 0 auto;
+
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.share-box a {
+    margin: 5px;
+    text-decoration: none;
+}
+
+.share-box img {
+    width: 1.2rem;
+}
