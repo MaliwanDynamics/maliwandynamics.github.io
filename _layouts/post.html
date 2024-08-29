@@ -2,15 +2,9 @@
 layout: skeleton
 ---
 <article class="post-container" itemscope itemtype="http://schema.org/BlogPosting">
+  
   <header class="post-header">
-    {% if page.videoId %}
-    <iframe class="video-iframe" allow="fullscreen" src="{{ site.yt_url_watch }}{{ page.videoId }}"></iframe>
-    {% endif %}
-    {% if page.imgUrl %}
-    <img width="100%" src="{{ page.imgUrl }}" alt="{{ site.altImgUrl }}"/>
-    {% endif %}
 
-    {% include social-share.html %}
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
 
     <p class="post-meta">
@@ -36,7 +30,15 @@ layout: skeleton
       {% endfor %}
 
       {%- endif -%}
+
     </p>
+
+    {% if page.videoId %}
+    <iframe class="video-iframe" allow="fullscreen" src="{{ site.yt_url_watch }}{{ page.videoId }}"></iframe>
+    {% endif %}
+    {% if page.imgUrl %}
+    <img width="100%" src="{{ page.imgUrl }}" alt="{{ site.altImgUrl }}"/>
+    {% endif %}  
 
   </header>
 
