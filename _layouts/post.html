@@ -7,16 +7,18 @@ layout: skeleton
   <iframe class="video-iframe" allow="fullscreen" src="{{ site.yt_url_watch }}{{ page.videoId }}"></iframe>
   {% endif %}
   {% if page.imgUrl %}
-  <img width="100%" src="{{ page.imgUrl }}" />
+  <img width="100%" src="{{ page.imgUrl }}" alt="{{ site.altImgUrl }}"/>
   {% endif %}
 
   <header class="post-header">
+
+    {% include social-share.html %}
 
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
 
     <p class="post-meta">
 
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
       <time class="date-published" datetime="{{ page.date | escape }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
       </time>
