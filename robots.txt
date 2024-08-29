@@ -21,6 +21,10 @@ Disallow: /about$
 Disallow: /about/
 Disallow: /assets$
 Disallow: /assets/
+Disallow: /blog/
+Disallow: /assets&
+Disallow: /video/
+Disallow: /video$
 Disallow: /.gif$
 Disallow: /.jpg$
 Disallow: /.jpeg$
