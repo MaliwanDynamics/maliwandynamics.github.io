@@ -1,5 +1,4 @@
 ---
-title: MALIWAN DYNAMICS
 layout: home
 ---
 
