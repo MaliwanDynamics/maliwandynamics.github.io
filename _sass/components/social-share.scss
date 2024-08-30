@@ -13,6 +13,10 @@
     text-decoration: none;
 }
 
+.share-box a:hover img { 
+    transform: scale(1.1);
+}
+
 .share-box img {
     width: 1.2rem;
 }

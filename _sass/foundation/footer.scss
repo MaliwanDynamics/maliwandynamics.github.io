@@ -1,6 +1,43 @@
-footer {
-    min-height: $footer-height;
+.footer-container {
+    @include flexium;
 
+    font-family: $decor-font-family;
+
+    min-height: $footer-height;
+    max-width: $master-content-width;
     margin: 0 auto;
     background-color: white;
+}
+
+.footer-content {
+    @include flexium;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 17pt;
+}
+
+.social-footer a {
+    text-decoration: none;
+}
+
+.social-footer a:hover img {
+    transform: scale(1.1);
+}
+
+.social-footer img {
+    vertical-align: bottom;
+    width: 4.5rem;
+    margin: .2rem;
+}
+
+.social-footer {
+    @include flexium;
+    margin: 0 auto;
+    min-width: 200px;
+}
+
+.details-footer {
+    margin: 0 auto;
+    min-width: 200px;
 }
