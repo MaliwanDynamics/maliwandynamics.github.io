@@ -6,6 +6,14 @@
     justify-content: center;
 }
 
+@mixin flexium-rev {
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    align-items: center;
+    justify-content: center;
+}
+
 @mixin blocking {
     display: inline-block;
     align-items: center;

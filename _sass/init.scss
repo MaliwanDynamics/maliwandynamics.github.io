@@ -21,13 +21,13 @@ $master-accent-grey: rgb(70, 70, 70);
 
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import
+  "components/card",
+  "components/social-share",
+  "utility";
+@import
   "foundation/skeleton",
   "foundation/page",
   "foundation/post",
   "foundation/home",
   "foundation/header",
   "foundation/footer";
-@import
-  "components/card",
-  "components/social-share",
-  "utility";

@@ -7,9 +7,8 @@ layout: skeleton
 
     <div class="hero-header">
 
-
       <div class="home-words">
-      
+
         {%- if page.title -%}
         <div class="title-container">
           {% include bar-effect.html %}
@@ -17,16 +16,19 @@ layout: skeleton
           <p>{{ site.statement | escape }}</p>
         </div>
         {%- endif -%}
-      
+
       </div>
-  
+
       <div class="no-pointer-event home-img">
         <img class="home-img" src="/assets/img/logo/med-logo-compressed.png" alt="{{ site.altImgUrl }}" />
       </div>
+
     </div>
 
   </section>
 
-  <section class="home-content">{{ content }}</section>
+  <section class="home-content">
+    {{ content }}
+  </section>
 
 </div>
