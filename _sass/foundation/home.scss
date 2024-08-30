@@ -12,74 +12,74 @@
     max-width: 100%;
 }
 
+.home-words {
+    display: inline-block;
+    text-align: center;
+    height: 170px;
+
+    display: table;
+}
+
 .title-container {
-    position: relative;
+    display: table-cell;
+    vertical-align: bottom;
     margin: 0 auto;
-    width: auto;
+    height: auto;
+}
+
+.hero-header-container {
+
+    display: flex;
+    align-items:center;
+    justify-content:center;
+
+    height: 50vh;
+    min-height: 700px;
+}
+
+.hero-header { 
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content:center;
+
+    align-items:center;
+
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.home-img {
+    width: 330px;
 }
 
 .square {
+    display: inline-block;
+
     height: 100%;
     width: 12px;
     height: 5px;
 
     background-color: cyan;
     border-radius: 5px;
-    position: absolute;
+    position:relative;
 
     z-index: 10;
 }
 
-#square1 {
-    left: 0px;
-    animation: spinner-effect 2.1s ease .7s infinite;
-}
-
-#square2 {
-    left: 25px;
-    animation: spinner-effect 2.3s ease .7s infinite;
-}
-
-#square3 {
-    left: 50px;
-    animation: spinner-effect 1.5s ease .7s infinite;
-}
-
-#square4 {
-    left: 75px;
-    animation: spinner-effect 1.2s ease .7s infinite;
-}
-
-#square5 {
-    left: 100px;
-    animation: spinner-effect 1s ease .7s infinite;
-}
-
-#square1:hover, #square2:hover, #square3:hover, #square4:hover, #square5:hover {
+#square1 {animation: spinner-effect 1.1s ease .6s infinite;}
+#square2 {animation: spinner-effect 1.3s ease .6s infinite;}
+#square3 {animation: spinner-effect 1.5s ease .6s infinite;}
+#square4 {animation: spinner-effect 1.7s ease .6s infinite;}
+#square5 {animation: spinner-effect 1.6s ease .6s infinite;}
+#square6 {animation: spinner-effect 1.2s ease .6s infinite;}
+#square1:hover, #square2:hover, #square3:hover, #square4:hover, #square5:hover, #square6:hover {
     animation-play-state: paused;
 }
 
-// TODO: wrap instead of dynamic text size
-@media (max-width: 720px) {
-    .home-container h1 {
-        font-size: 16px;
-    }
 
-    .home-container p {
-        font-size: 16px;
-    }
-
-    .title-container {
-        width: 80%;
-    }
-
-    .square {
-        width: 9px;
-    }
-}
 
 @keyframes spinner-effect {
-
     0% {
         opacity: 1;
         height: 5px;
@@ -87,7 +87,7 @@
 
     60% {
         opacity: 1;
-        height: 70px;
+        height: 95px;
         opacity: .5;
     }
 
@@ -95,5 +95,4 @@
         opacity: .2;
         height: 5px;
     }
-
 }

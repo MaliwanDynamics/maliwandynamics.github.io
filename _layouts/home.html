@@ -3,21 +3,26 @@ layout: skeleton
 ---
 <div class="no-select home-container">
 
-  <section class="row-fw">
+  <section class="hero-header-container">
 
-    <div class="col-2-f">
+    <div class="hero-header">
+
+
+      <div class="home-words">
       
-      {%- if page.title -%}
-      <div class="title-container">
-        <h1 class="home-header">{{ page.title }}</h1>
-        <p>{{ site.statement | escape }}</p>
-        {% include bar-effect.html %}
+        {%- if page.title -%}
+        <div class="title-container">
+          {% include bar-effect.html %}
+          <h1 class="home-header">{{ page.title }}</h1>
+          <p>{{ site.statement | escape }}</p>
+        </div>
+        {%- endif -%}
+      
       </div>
-      {%- endif -%}
-    </div>
-
-    <div class="no-pointer-event col-2-f">
-      <img class="home-img w-90" src="/assets/img/logo/med-logo-compressed.png" alt="{{ site.altImgUrl }}"" />
+  
+      <div class="no-pointer-event home-img">
+        <img class="home-img" src="/assets/img/logo/med-logo-compressed.png" alt="{{ site.altImgUrl }}" />
+      </div>
     </div>
 
   </section>

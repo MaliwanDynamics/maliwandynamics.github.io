@@ -74,8 +74,15 @@
 
 .h-50vh {
     height: 50vh;
-    min-height: 100%;
 }
+
+.vh-50 {
+    height: 50vh;
+}
+
+.mhpx-400 {
+    min-height: 400px;
+} 
 
 .no-select {
     -webkit-touch-callout: none;
