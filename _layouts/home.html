@@ -9,11 +9,13 @@ layout: skeleton
 
       <div class="home-words">
 
-        {%- if page.title -%}
+        {%- if site.title -%}
         <div class="title-container">
           {% include bar-effect.html %}
-          <h1 class="home-header">{{ page.title }}</h1>
+          <h1 class="home-header">{{ site.title }}</h1>
+          {%- if site.statement -%}
           <p>{{ site.statement | escape }}</p>
+          {%- endif -%}
         </div>
         {%- endif -%}
 
