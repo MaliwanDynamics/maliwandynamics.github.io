@@ -1,8 +1,10 @@
 ---
 layout: post
 
-title: First Post
+title: First Post Get To The Point
 imgUrl: /assets/img/404gifthing.gif
+
+imgCaption: The Bob With Coffee...
 
 date: 2024-08-28 1:47:04 -0400
 categories: blog

@@ -2,7 +2,7 @@
 layout: skeleton
 ---
 <article class="post-container" itemscope itemtype="http://schema.org/BlogPosting">
-  
+
   <header class="post-header">
 
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
@@ -36,14 +36,14 @@ layout: skeleton
   </header>
 
   <section class="post-content" itemprop="articleBody">
-    {% if page.videoId %}
-    <iframe class="video-iframe" allow="fullscreen" src="{{ site.yt_url_watch }}{{ page.videoId }}"></iframe>
-    {% endif %}
-    {% if page.imgUrl %}
-    <img width="100%" src="{{ page.imgUrl }}" alt="{{ site.altImgUrl }}"/>
-    {% endif %}
-    {% include social-share.html %}
-    {{ content }}
+  {% if page.videoId %}
+  <iframe class="video-iframe" allow="fullscreen" src="{{ site.yt_url_watch }}{{ page.videoId }}"></iframe>
+  {% endif %}
+
+  {% include /components/post-image-wrapper.html %}
+  {% include social-share.html %}
+
+  {{ content }}
   </section>
 
 </article>
