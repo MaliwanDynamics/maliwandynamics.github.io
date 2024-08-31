@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-$master-font-family: Arial, Helvetica, sans-serif;
-$master-font-size: 16px;
-
-$decor-font-family: "Chakra Petch", sans-serif;
-
 $master-padding: 4px;
 $master-content-width: 1000px;
 
@@ -14,11 +9,9 @@ $foothead: $header-height + $footer-height;
 
 $content-scale: calc(100vh - #{$foothead});
 
-$master-orange: rgb(255, 115, 0);
-$master-cyan: rgb(7, 227, 235);
-$master-accent-grey: rgb(70, 70, 70);
-
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import "skin/light-skin";
 
 @import "utility";
 @import "components/components";

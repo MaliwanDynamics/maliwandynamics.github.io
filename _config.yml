@@ -22,9 +22,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-header_pages:
-  - index.md
-  - about.md
+# header_pages:
+#   - index.md
+#   - about.md
 
 yt_url_base: "https://youtube.com/"
 yt_url_watch: https://www.youtube.com/embed/

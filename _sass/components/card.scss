@@ -1,57 +1,55 @@
 .post-card-container {
-    display: flex;
-    flex-wrap: wrap;
-
-    align-items: center;
-    justify-content: center;
-
     margin: 0 auto;
 }
 
 .post-card {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 
-    width: 80%;
+    @include flexium;
+
+    // TODO: Additional fleium options for text alignment top etc...
+    // display: flex;
+    // flex-wrap: wrap;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    width: 100%;
     min-width: 50px;
 
-    height: 290px;
+    height: auto;
     margin-top: 20px;
 
-    cursor: pointer;
-}
+    color: $master-accent-grey;
 
-.post-card p {
-    text-align: center;
-    padding: 6px;
-    background-color: rgb(249, 249, 249);
+    border-top: 1px solid $master-accent-light-grey;
 
-    font-family: $decor-font-family;
-
-    color: rgb(120, 120, 120);
-
-    padding: 0 !important;
-    margin: 0 !important;
 }
 
 .post-card:hover {
-    box-shadow: 5px 5px 5px rgb(192, 192, 192);
+    background-color: $master-accent;
+    color: $master-accent-black;
 }
 
-.post-card:hover p {
-    color: black;
+.post-card-item {
+    padding: 5px;
+    display: inline-block;
+
+    width: calc(100% / 2 - 10px);
+    min-width: 200px;
 }
 
-.post-image {
+.post-card-img {
+
     width: 100%;
-    height: auto;
+    height: 220px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 @media (max-width: 768px) {
-    .post-card {
-        background-size: 120%;
-        width: 90%;
-        height: 210px;
+    .post-card-item {
+        width: 100%;
     }
 }

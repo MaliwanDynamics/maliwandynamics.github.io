@@ -3,8 +3,8 @@
     <div class="header-nav">
 
       <div class="header-logo">
-        <a href="{{ site.url }}">
-          <img src="/assets/img/logo/med-logo-compressed.png" />
+        <a href="{{ site.url }}" draggable="false" rel="noopener noreferrer">
+          <img src="/assets/img/logo/med-logo-compressed.png" alt="{{ site.altImgUrl }}" rel="noopener noreferrer" />
         </a>
       </div>
 
@@ -14,10 +14,22 @@
         <label for="checkbox-toggle" class="hamburger">&#9776</label>
 
         <div class="menu">
-          <li><a href="/">HOME</a></li>
-          <li><a href="/video">VIDEO</a></li>
-          <li><a href="/blog">BLOG</a></li>
-          <li><a href="/about">ABOUT</a></li>
+          <li>
+            <a {% if page.name=="index.md" %} class="active-menu" {% endif %}
+            draggable="false" href="/" rel="noopener noreferrer">HOME</a>
+          </li>
+          <li>
+            <a {% if page.name=="video.md" %} class="active-menu" {% endif %}
+            draggable="false" href="/video" rel="noopener noreferrer">VIDEO</a>
+          </li>
+          <li>
+            <a {% if page.name=="blog.md" %} class="active-menu" {% endif %}
+            draggable="false" href="/blog" rel="noopener noreferrer">BLOG</a>
+          </li>
+          <li>
+            <a {% if page.name=="about.md" %} class="active-menu" {% endif %}
+            draggable="false" href="/about" rel="noopener noreferrer">ABOUT</a>
+          </li>
         </div>
 
       </ul>

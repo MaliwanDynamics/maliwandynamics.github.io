@@ -1,6 +1,9 @@
 html {
     font-size: $master-font-size;
     font-family: $master-font-family;
+
+    @include master-background;
+    background-attachment: fixed;
 }
 
 body, h1, h2, h3, h4, h5, h6, p {
@@ -13,7 +16,7 @@ body, h1, h2, h3, h4, h5, h6, p {
     // padding-right: $master-padding;
     margin: 0 auto;
     max-width: $master-content-width;
-    background-color: white;
+    background-color: $master-background;
     min-height: $content-scale;
 }
 
@@ -54,6 +57,16 @@ p, li {
 .footer-col {
     width: 50%;
     min-width: 250px;
+}
+
+.generic-date {
+    font-size: 12pt;
+    color: $master-accent-grey;
+}
+
+.generic-categories {
+    font-size: 12pt;
+    color: $master-accent-grey;
 }
 
 @media (max-width: 720px) {

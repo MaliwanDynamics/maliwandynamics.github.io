@@ -1,0 +1,44 @@
+$master-font-family: Arial, Helvetica, sans-serif;
+$master-font-size: 16px;
+
+$decor-font-family: "Chakra Petch", sans-serif;
+
+$master-orange: rgb(255, 115, 0);
+$master-cyan: rgb(7, 227, 235);
+
+$master-accent-grey: rgb(70, 70, 70);
+
+$master-accent-light-grey: rgb(173, 173, 173);
+
+$master-accent-black: rgb(20, 20, 20);
+
+$master-accent-shadow: rgb(196, 196, 196);
+
+$master-background: white;
+$master-accent: whitesmoke;
+
+@mixin master-header-background {
+    background-image:
+    linear-gradient(45deg,
+        $master-accent-black 0 10%,
+        $master-cyan 0 25%,
+        $master-background 0 37%,
+        $master-orange 0 40%,
+        $master-background 0 42%,
+        $master-background 0 49%,
+        $master-background 0);
+}
+
+@mixin master-background {
+    background-image:
+    linear-gradient(45deg,
+        $master-accent-black 0 20%,
+        $master-cyan 0 35%,
+        $master-background 0 42%,
+        $master-cyan 0 57%,
+        $master-background 0 63%,
+        $master-orange 0 70%,
+        $master-background 0 82%,
+        $master-background 0 89%,
+        $master-background 0);
+}

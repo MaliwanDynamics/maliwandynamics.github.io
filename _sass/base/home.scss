@@ -1,6 +1,7 @@
 
 .home-container {
     margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 .home-header {
@@ -50,7 +51,7 @@
     width: 12px;
     height: 5px;
 
-    background-color: cyan;
+    background-color: $master-cyan;
     border-radius: 5px;
     position:relative;
 

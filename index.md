@@ -1,26 +1,30 @@
 ---
 layout: home
 ---
-
-<div class="post-card-container">
-    {% for post in site.posts limit: 3 %}
+<div class="no-select post-card-container" data-nosippet>
+    {% for post in site.posts limit: 10 %}
         {% if post.videoId %}
-            <div class="post-card" onclick="location.href='{{ post.url }}'"
-            style="background-image: url({{ site.yt_img_url_base }}{{ post.videoId }}/0.jpg)">
-                <p href="{{ post.url }}">{{ post.title }}</p>
+        <a class="post-card" href="{{ post.url }}">
+            <div class="post-card-item">
+                <p>{{ post.title }}</p>
+                <p class="generic-date">{{ post.date | date: '%-d %B %Y' }}</p>
+                <p class="generic-categories">{{ post.categories }}</p>
             </div>
+            <div class="post-card-item">
+                <div class="post-card-img" style="background-image: url({{ site.yt_img_url_base }}{{ post.videoId }}/0.jpg)"></div>
+            </div>
+        </a>
         {% else %}
-            {% if post.imgUrl %}
-                <div class="post-card" onclick="location.href='{{ post.url }}'"
-                style="background-image: url({{ post.imgUrl }})">
-                    <p href="{{ post.url }}">{{ post.title }}</p>
-                </div>
-            {% else %}
-                <div class="post-card" onclick="location.href='{{ post.url }}'"
-                style="background-image: url(/assets/img/logo/med-logo-compressed.png)">
-                    <p href="{{ post.url }}">{{ post.title }}</p>
-                </div>
-            {% endif %}
+        <a class="post-card" href="{{ post.url }}">
+            <div class="post-card-item">
+                <p>{{ post.title }}</p>
+                <p class="generic-date">{{ post.date | date: '%-d %B %Y' }}</p>
+                <p class="generic-categories">{{ post.categories }}</p>
+            </div>
+            <div class="post-card-item">
+                <div class="post-card-img" style="background-image: url({{ post.imgUrl }})"></div>
+            </div>
+        </a>
         {% endif %}
     {% endfor %}
 </div>
