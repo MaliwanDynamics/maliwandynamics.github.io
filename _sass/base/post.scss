@@ -16,16 +16,3 @@
 .post-content p {
     padding: 1rem 0 1rem;
 }
-
-.video-iframe {
-    margin: 0 auto;
-    height: 500px;
-    width: 100%;
-}
-
-@media (max-width: 720px) {
-    .video-iframe {
-        min-height: 230px;
-        height: auto;
-    }
-}
