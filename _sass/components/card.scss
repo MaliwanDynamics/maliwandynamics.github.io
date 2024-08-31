@@ -30,6 +30,9 @@
     font-family: $decor-font-family;
 
     color: rgb(120, 120, 120);
+
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .post-card:hover {
@@ -40,15 +43,14 @@
     color: black;
 }
 
-.post-image { 
+.post-image {
     width: 100%;
     height: auto;
 }
 
-
 @media (max-width: 768px) {
     .post-card {
-        background-size:120%;
+        background-size: 120%;
         width: 90%;
         height: 210px;
     }
