@@ -9,13 +9,14 @@
   {% else %}
   <meta property="og:image" content="{{ site.url }}/assets/img/logo/med-logo.png" />
   {% endif %}
-
   {% if page.author %}
   {% else %}
-  <meta property="twitter:creator" content="{{ site.twitterUser }}" />
   <meta property="author" content="{{ site.defaultAuthor }}" />
   {% endif %}
-
+  {% if page.twitterUser %}
+  <meta property="twitter:creator" content="{{ site.twitterUser }}" />
+  {% endif %}
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="icon" href="/favicon.ico" type="img/x-icon">
+
+  <link rel="shortcut icon" type="img/x-icon" href="/favicon.ico">
 </head>
