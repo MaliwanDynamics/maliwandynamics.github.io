@@ -23,3 +23,25 @@
     margin: 0 auto;
     display: block;
 }
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
+.post-content h1 {
+    font-size: 20pt;
+}
+
+.post-content h2 {
+    font-size: 18pt;
+}
+
+.post-content h3 {
+    font-size: 16pt;
+}
