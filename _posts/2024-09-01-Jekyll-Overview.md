@@ -1,3 +1,15 @@
+---
+layout: post
+
+title: How To Jekyll
+imgUrl: /assets/img/posts/2024/jekyll-the-jackal.jpg
+
+imgCaption: The Jekyll Jackel? | Photo by Benjamin Farren 
+imgCaptionSrc: https://www.pexels.com/photo/jackal-in-grassland-15705591/
+
+date: 2024-08-28 1:47:04 -0400
+categories: blog
+---
 ## Intro
 
 Apart from the occasional GitHub-er or fanboy, I feel that not many people talk about Jekyll anymore. It can be useful for setting up a simple static website as fast as possible.
