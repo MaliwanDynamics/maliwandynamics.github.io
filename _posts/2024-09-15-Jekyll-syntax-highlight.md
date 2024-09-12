@@ -7,27 +7,82 @@ imgUrl: /assets/img/post/sept-2024/syntax-highlight-computer-head-img.jpg
 imgCaption: Glowing Syntax
 imgCaptionSrc: https://www.pexels.com/photo/blue-and-red-light-from-computer-1933900/
 
-date: 2024-09-15 12:00:00 -0400
+date: 2024-09-14 12:00:00 -0400
 categories:
 - blog
 - software
 ---
-So you spun up a Jekyll website, and you need to add a code snippet to your new post.
+So you spun up a Jekyll website, and you need to add a code snippet to a new post. But wait! It's ugly as all f***k! Why? How do other websites get their code to look so pretty and shiny?
 
-But wait! It's ugly as all f***k! Why? How do other websites get their code to look so pretty and shiny?
+Well, if you are on Github pages, then I recommend using the default [Rouge](https://github.com/rouge-ruby/rouge) configuration. If you are already using Karmdown, then you can opt to use [Github Flavored Markdown (GFM)](https://github.github.com/gfm/) and set Rogue as your syntax highlighter.
 
-Well [Kramdown and Coderay](https://github.com/kramdown/syntax-coderay) together is one popular solution. I recommend reading the documentation first, but if you are lazy and want the answer fast, here you go.
+I personaly had many issues with Kramdown and any other parser other than Rogue on Github Pages which is why I am reccomending Rouge as-is out of the box.
 
-## Add The Gems
+If that is not to your fancy, [Kramdown and Coderay](https://github.com/kramdown/syntax-coderay) together is another popular solution.
 
-Go to your Gemfile in the root of your project and add Kramdown and Coderay gemmies.
+I also highly recommend reading the documentation if you feel lost, but if you are lazy and want the answer fast, here you go.
 
-Yes… gemmies.
+## The Plain Rouge Option
+
+### Install Rouge
+
+With Jekyll installed there is a high probability you also have the rouge gem installed. If not, you can install it and add it to the Gemfile as needed.
+
+```ruby
+gem ‘rouge’
+```
+
+### Add CSS For Rouge
+
+If you have ever tried to set up syntax highlighting in Jekyll before you may have heard of [Pygments](https://pygments.org/). If not, just know you need some additional CSS that will hydrate the classes that Rouge adds to the HTML for code blocks.
+
+This is where I got my CSS from: [Pygments CSS Themes](https://jwarby.github.io/jekyll-pygments-themes/languages/ruby.html)
+
+Once obtained, add it to a CSS file in your project, then import it. I went the SCSS route, so I was able to import it into the main body of CSS.
+
+```css
+@import my-css-theme
+```
+
+## Customize Rouge
+
+### 1. Override The `.highlight` CSS Class
+
+Rouge will add a .highlight CSS class to the generated HTML of the code blocks. Override it to add flavor to the blocks.
+
+```css
+.highlight {
+    background-color: lightblue;
+    padding: 1rem;
+    border-radius: 10px;
+
+    overflow-x: scroll;
+}
+```
+
+### 2. Rouge Configuration
+
+- [Rouge Github](https://github.com/rouge-ruby/rouge)
+- [Rouge Jekyll Docs](https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting)
+
+
+---
+## The Kramdown Option
+
+### If Using Rogue
+
+```ruby
+gem 'kramdown', '~> 2.3'
+```
+
+### If Using Coderay
 
 ```ruby
 gem 'kramdown', '~> 2.3'
 gem "kramdown-syntax-coderay"
 ```
+
+### Install
 
 Double-check this is the version of Kramdown you want. Then Make sure to stop the Jekyll server if it is already running.
 
@@ -40,14 +95,24 @@ bundle install
 I'm running Debian Linux for this example, but you should get a similar result.
 
 ```shell
-Installing kramdown-syntax-coderay 1.0.1
 Bundle complete! 7 Gemfile dependencies, 31 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
 ```
 
-## Update the Configuration
+### Update the Configuration
 
-Now run over the the _config.yml file which is also in the root of the project to add some fluff. Keep in mind this is a minimal configuration, there are lots of other configuration options.
+Now run over to the _config.yml file in the root of your project and add some YAML.
+
+#### Yaml For Rouge
+
+```yaml
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+```
+
+#### Yaml For Coderay
 
 ```yaml
 markdown: kramdown
@@ -56,21 +121,9 @@ kramdown:
   coderay_line_numbers: ''
 ```
 
-I took the liberty of disabling line numbers because it looks gross, but feel free to remove that.
+Keep in mind this is a minimal configuration, there are lots of other configuration options. I took the liberty of disabling line numbers because it looks gross, but feel free to remove that.
 
-## Initiate Syntax Highlighting
-
-To initiate the syntax highlight, add the language name right of the 3 tildies like so.
-
-```
-```html
-```
-
-So after a server reboot, you should now have syntax highlighting.
-
-## Customize
-
-If you feel the syntax is still a bit ugly, you have a few options.
+## Customize Kramdown and Coderay
 
 ### 1. Override The `.code` CSS Class
 
@@ -88,4 +141,5 @@ Coderay will add a .code CSS class to the generated HTML of the code blocks. Ove
 
 ### 2. Kramdown and Coderay Configuration
 
-[Kramdown and Coderay](https://github.com/kramdown/syntax-coderay) give several options for additional customization.
+- [Kramdown Coderay Github](https://github.com/kramdown/syntax-coderay)
+- [Kramdown Coderay Jekyll Docs](https://jekyllrb.com/docs/configuration/markdown/)
