@@ -78,7 +78,7 @@ Coderay will add a .code CSS class to the generated HTML of the code blocks. Ove
 
 ```css
 .code {
-    background-color: $master-accent;
+    background-color: lightblue;
     padding: 1rem;
     border-radius: 10px;
 
