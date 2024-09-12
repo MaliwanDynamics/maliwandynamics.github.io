@@ -1,7 +1,7 @@
 ---
 layout: home
 ---
-<div class="no-select post-card-container" data-nosippet>
+<div data-nosnippet class="no-select post-card-container">
     {% for post in site.posts limit: 10 %}
         {% if post.videoId %}
             <a class="post-card" href="{{ post.url }}">
