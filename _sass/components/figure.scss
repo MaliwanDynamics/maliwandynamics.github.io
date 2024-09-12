@@ -5,7 +5,16 @@
     margin: 0 auto;
 }
 
-.figure-wrapper img {
+.general-figure-wrapper {
+    max-width: 85%;
+    max-height: 720px;
+    background-color: black;
+    margin: 0 auto;
+
+    border: 1px solid black;
+}
+
+.figure-wrapper img, .general-figure-wrapper img {
     width: 100%;
     height: auto;
     margin: 0 auto;
