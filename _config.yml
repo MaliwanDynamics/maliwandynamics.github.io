@@ -20,6 +20,7 @@ instagramUser: "@maliwandynamics"
 # Build settings
 markdown: kramdown
 kramdown:
+  input: GFM
   syntax_highlighter: coderay
   coderay_line_numbers: ''
 
