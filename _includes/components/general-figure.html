@@ -1,0 +1,16 @@
+{% if page.imgUrl %}
+<figure class="figure">
+    <div class="figure-wrapper">
+        <img src="{{ include.figureImg }}" alt="{{ site.altImgUrl }}" />
+    </div>
+    {% if figureCap %}
+    <figcaption>
+        <p>{{ figureCap }}
+            {% if page.imgCaptionSrc %}
+            <a href="{{ figureCapSrc }}">[source]</a>
+            {% endif %}
+        </p>
+    </figcaption>
+    {% endif %}
+</figure>
+{% endif %}

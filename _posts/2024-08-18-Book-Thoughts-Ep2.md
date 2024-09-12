@@ -3,7 +3,9 @@ layout: post
 title: Book Thoughts Ep2 | Feel Good Productivity | Netflix Company Culture
 date: 2024-08-18 21:47:04 -0400
 videoId: N9dlwCOpKjA
-categories: video
+categories:
+- video
+- book
 ---
 - Netflix faced many challenges in the begginging, including rejection from Blockbuster to buy the company.
 - Patty McCord introduced radical yet strategic changes in company culture.
