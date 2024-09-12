@@ -1,0 +1,29 @@
+## Google, please accept this giraffe as payment. Thank You ##
+#                                 ._ o o
+#                                 \_`-)|_
+#                              ,""       \ 
+#                            ,"  ## |   ಠ ಠ. 
+#                          ," ##   ,-\__    `.
+#                        ,"       /     `--._;)
+#                      ,"     ## /
+#                    ,"   ##    /
+##---------------------------------------------------##
+
+User-agent:*
+Disallow: /?*=
+Disallow: /search/
+Disallow: /404$
+Disallow: /404/
+Disallow: /about$
+Disallow: /about/
+Disallow: /assets$
+Disallow: /assets/
+Disallow: /blog/
+Disallow: /assets&
+Disallow: /video/
+Disallow: /video$
+Disallow: /.gif$
+Disallow: /.jpg$
+Disallow: /.jpeg$
+
+Sitemap: http://localhost:4000/sitemap.xml
