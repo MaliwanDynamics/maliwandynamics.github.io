@@ -27,7 +27,7 @@ To take it a bit further, you can create a CSS class to apply the margin to more
 {% include /components/general-figure.html figureImg='/assets/img/post/sept-2024/center-div.png' %}
 
 ### The HTML
-```
+```html
 <head>
     <title>Raw CSS HTML</title>
     <link rel="stylesheet" type="text/css" href="center-div-style.css">
@@ -44,7 +44,7 @@ To take it a bit further, you can create a CSS class to apply the margin to more
 ```
 
 ### The CSS
-```
+```css
 .center-me {
     margin: 0 auto;
 }
@@ -66,7 +66,7 @@ You can center more than just a div with the margin auto trick. Here is an examp
 {% include /components/general-figure.html figureImg='/assets/img/post/sept-2024/center-div-main.png' %}
 
 ### The HTML
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -88,7 +88,7 @@ You can center more than just a div with the margin auto trick. Here is an examp
 ```
 
 ### The CSS
-```
+```css
 * {
     margin: 0;
     padding: 0;
