@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Center an HTML DIV
+title: Center Elements In Raw HTML And CSS
 imgUrl: /assets/img/post/sept-2024/center-div-head-img.jpg
 
 imgCaption: Center This

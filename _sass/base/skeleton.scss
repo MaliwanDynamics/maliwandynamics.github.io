@@ -65,8 +65,9 @@ p, li {
 }
 
 .generic-categories {
-    font-size: 12pt;
+    font-size: 11pt;
     color: $master-accent-grey;
+    font-style: italic;
 }
 
 @media (max-width: 720px) {
