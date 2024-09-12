@@ -3,7 +3,9 @@ layout: post
 title: Book Thoughts Ep1 | Feel Good Productivity | Framing Outcomes
 date: 2024-08-18 21:47:04 -0400
 videoId: N9dlwCOpKjA
-categories: video
+categories:
+- video
+- book
 ---
 - Famous youtuber Mark Rober set up an experiment which shows that simply changing the 'frame', in this case just the working of a failure outcome can change the probability of trying again.
 - Simply giving yourself the feeling of more control and framing your failures as choices can increase motivation.
