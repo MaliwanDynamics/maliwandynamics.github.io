@@ -39,6 +39,10 @@ p, li {
     font-size: 16pt;
 }
 
+a {
+    color: $master-cyan-accent;
+}
+
 .footer-container {
     width: 100%;
 }
@@ -68,6 +72,12 @@ p, li {
     font-size: 11pt;
     color: $master-accent-grey;
     font-style: italic;
+}
+
+.noscript-styling {
+    color: red;
+    font-size: 20pt;
+    padding: 10px;
 }
 
 @media (max-width: 720px) {
