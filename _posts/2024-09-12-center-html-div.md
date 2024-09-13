@@ -18,9 +18,9 @@ To this day, I still do not understand why many resources online make it appear 
 
 ## Basic Example
 
-In its most basic form, you all you need a container to put the div inside of. Then set the div’s margin to `margin: 0 auto;`
+In its most basic form, all you need is a container to put the div inside of, then set the div’s margin to `margin: 0 auto;`
 
-To take it a bit further, you can create a CSS class to apply the margin to more than just a div tag.
+To take it a bit further, can create a CSS class to apply the margin to more than just a div tags.
 
 {% include /components/general-figure.html figureImg='/assets/img/post/sept-2024/center-div.png' %}
 
@@ -55,9 +55,9 @@ To take it a bit further, you can create a CSS class to apply the margin to more
 
 ## Full Example With Content Wrapper
 
-You can center more than just a div with the margin auto trick. Here is an example to center everything in the main tag. This way you can have a uniform and centered content feel for every page.
+You can center more than div elements with the margin auto trick. Here is an example to center everything in the main element. This way you can have a uniform and centered content feel for every page.
 
-As a side note, preference for adding CSS to a main tag in this manner will vary, so not saying this is the best practice, it's just an example. You could add the `.center-me` class to the main element instead (or any element) to avoid duplication.
+As a side note, preference for adding CSS to a main tag in this manner will vary, so I'm not saying this is the best practice, it's just an example. You could add the `.center-me` class to the main element instead (or any element) to avoid duplication.
 
 <a href="https://github.com/MaliwanDynamics/center-div">Full Example On Github</a>
 
