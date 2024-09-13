@@ -11,20 +11,30 @@ body, h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
 
-.main-container {
-    // margin: $master-padding;
-    // padding-right: $master-padding;
-    margin: 0 auto;
-    max-width: $master-content-width;
-    background-color: $master-background;
-    min-height: $content-scale;
-}
-
 // TODO: The min hight in the main container does not bump margin and padding in sub containers.
 #skeleton {
-    max-width: calc(100% - 30px);
-    margin-left: 15px;
-    margin-right: 15px;
+    width: auto;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 900px;
+    background-color: $master-background;
+}
+
+@supports(max-width: $master-content-width) {
+    .main-container {
+        width: 100%;
+        max-width: $master-content-width;
+        min-height: $content-scale;
+    }
+
+    #skeleton {
+        width: 100%;
+        max-width: calc(100% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 
 h1 {

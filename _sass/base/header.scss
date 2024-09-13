@@ -4,6 +4,7 @@
 }
 
 .header-content {
+    position: absolute;
     position: fixed;
     z-index: 100;
 
@@ -50,8 +51,6 @@
     font-weight: bold;
     text-decoration: none;
     color: $master-accent-grey;
-
-    // text-shadow: 2px 2px whitesmoke;
 }
 
 .menu a:hover {

@@ -1,9 +1,10 @@
 {% if include.data %}
 <a class="post-card" href="{{ include.data.url }}" rel="noopener noreferrer" draggable="false">
     <div class="post-card-item">
-        {% if include.disc %}<p>{{ include.disc }}</p>{% endif %}
+        {% if include.disclaimer %}<p>{{ include.disclaimer }}</p>{% endif %}
         <p>{{ include.data.title }}</p>
         <p class="generic-date">{{ include.data.date | date: '%-d %B %Y' }}</p>
+        <p class="generic-date">{{ include.data.description }}</p>
         <p class="generic-categories">
         {% for cat in include.data.categories %}
             {{ cat }};
@@ -11,13 +12,13 @@
         </p>
     </div>
     {% if include.data.videoId %}
-        <div class="post-card-item">
-            <div class="post-card-img" style="background-image: url({{ site.yt_img_url_base }}{{ include.data.videoId }}/0.jpg)"></div>
-        </div>
+    <div class="post-card-item">
+        <div class="post-card-img" style="background-image: url({{ site.yt_img_url_base }}{{ include.data.videoId }}/0.jpg)"></div>
+    </div>
     {% else if include.data.imgUrl %}
-        <div class="post-card-item">
-            <div class="post-card-img" style="background-image: url({{ include.data.imgUrl }})"></div>
-        </div>
+    <div class="post-card-item">
+        <div class="post-card-img" style="background-image: url({{ include.data.imgUrl }})"></div>
+    </div>
     {% endif %}
 </a>
 {% endif %}

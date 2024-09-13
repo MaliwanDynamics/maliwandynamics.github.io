@@ -3,12 +3,7 @@
 }
 
 .post-card {
-
     @include flexium;
-
-    // TODO: Additional fleium options for text alignment top etc...
-    // display: flex;
-    // flex-wrap: wrap;
 
     text-decoration: none;
     font-weight: bold;

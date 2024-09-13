@@ -35,20 +35,18 @@ layout: skeleton
   </header>
 
   <section class="post-content" itemprop="articleBody">
-
-  {% include /components/post-video.html %}
-  {% include /components/post-figure.html %}
-  {% include /components/social-share.html %}
-
-  {{ content }}
-
-  {% if page.next %}
-  {% include /components/post-card.html data=page.next disc="NEXT" %}
-  {% endif %}
-  {% if page.previous %}
-  {% include /components/post-card.html data=page.previous disc="PREVIOUS" %}
-  {% endif %}
-
+    {% include /components/post-video.html %}
+    {% include /components/post-figure.html %}
+    {% include /components/social-share.html %}
+    {{ content }}
+  </section>
+  <section>
+    {% if page.next %}
+    {% include /components/post-card.html data=page.next disclaimer="NEXT" %}
+    {% endif %}
+    {% if page.previous %}
+    {% include /components/post-card.html data=page.previous disclaimer="PREVIOUS" %}
+    {% endif %}
   </section>
 
 </article>

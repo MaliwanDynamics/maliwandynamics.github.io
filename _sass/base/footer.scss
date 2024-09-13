@@ -10,6 +10,7 @@
 }
 
 .footer-content {
+    display: block;
     @include flexium;
     width: 80%;
     margin: 0 auto;
@@ -21,8 +22,10 @@
     text-decoration: none;
 }
 
-.social-footer a:hover img {
-    transform: scale(1.1);
+@supports (transform: scale(1.1)) {
+    .social-footer a:hover img {
+        transform: scale(1.1);
+    }
 }
 
 .social-footer img {
