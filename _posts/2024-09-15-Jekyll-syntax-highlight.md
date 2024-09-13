@@ -1,13 +1,13 @@
 ---
 layout: post
 
-title: Jekyll Syntax Highlighting
+title: Jekyll Syntax Highlighting For Code Snippets
 imgUrl: /assets/img/post/sept-2024/syntax-highlight-computer-head-img.jpg
 
 imgCaption: Glowing Syntax
 imgCaptionSrc: https://www.pexels.com/photo/blue-and-red-light-from-computer-1933900/
 
-date: 2024-08-14 12:00:00 -0400
+date: 2024-09-14 12:00:00 -0400
 categories:
 - blog
 - software
