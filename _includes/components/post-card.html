@@ -1,40 +1,23 @@
-
-<a class="post-card" href="{{ post.url }}">
-
-    {% if post.videoId %}
-
+{% if include.data %}
+<a class="post-card" href="{{ include.data.url }}" rel="noopener noreferrer" draggable="false">
+    <div class="post-card-item">
+        {% if include.disc %}<p>{{ include.disc }}</p>{% endif %}
+        <p>{{ include.data.title }}</p>
+        <p class="generic-date">{{ include.data.date | date: '%-d %B %Y' }}</p>
+        <p class="generic-categories">
+        {% for cat in include.data.categories %}
+            {{ cat }};
+        {% endfor %}
+        </p>
+    </div>
+    {% if include.data.videoId %}
         <div class="post-card-item">
-            <p>{{ post.title }}</p>
-            <p class="generic-date">{{ post.date | date: '%-d %B %Y' }}</p>
-            <p class="generic-categories">
-            {% for cat in post.categories %}
-                {{ cat }};
-            {% endfor %}
-            </p>
+            <div class="post-card-img" style="background-image: url({{ site.yt_img_url_base }}{{ include.data.videoId }}/0.jpg)"></div>
         </div>
+    {% else if include.data.imgUrl %}
         <div class="post-card-item">
-            <div class="post-card-img" style="background-image: url({{ site.yt_img_url_base }}{{ post.videoId }}/0.jpg)"></div>
+            <div class="post-card-img" style="background-image: url({{ include.data.imgUrl }})"></div>
         </div>
-
-    {% else if post.url %}
-
-        <div class="post-card-item">
-            <p>{{ post.title }}</p>
-            <p class="generic-date">{{ post.date | date: '%-d %B %Y' }}</p>
-            <p class="generic-categories">
-                {% for cat in post.categories %}
-                    {{ cat }};
-                {% endfor %}
-            </p>
-        </div>
-        <div class="post-card-item">
-            <div class="post-card-img" style="background-image: url({{ post.imgUrl }})"></div>
-        </div>
-
-    {% else %}
-
-        <p>Post Not Found</p>
-
     {% endif %}
-
 </a>
+{% endif %}
