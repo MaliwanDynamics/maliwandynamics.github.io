@@ -7,14 +7,14 @@ imgUrl: /assets/img/post/sept-2024/syntax-highlight-computer-head-img.jpg
 imgCaption: Glowing Syntax
 imgCaptionSrc: https://www.pexels.com/photo/blue-and-red-light-from-computer-1933900/
 
-date: 2024-09-14 12:00:00 -0400
+date: 2024-08-14 12:00:00 -0400
 categories:
 - blog
 - software
 ---
 So you spun up a Jekyll website, and you need to add a code snippet to a new post. But wait! It's ugly as all f***k! Why? How do other websites get their code to look so pretty and shiny?
 
-Well, if you are on Github pages, then I recommend using the default [Rouge](https://github.com/rouge-ruby/rouge) configuration. If you are already using Karmdown, then you can opt to use [Github Flavored Markdown (GFM)](https://github.github.com/gfm/) and set Rogue as your syntax highlighter.
+Well, if you are on Github pages, then I recommend using the default [Rouge](https://github.com/rouge-ruby/rouge) configuration. If you are already using [Karmdown](https://kramdown.gettalong.org/), then you can opt to use [Github Flavored Markdown (GFM)](https://github.github.com/gfm/) and set Rogue as your syntax highlighter.
 
 I personaly had many issues with Kramdown and any other parser other than Rogue on Github Pages which is why I am reccomending Rouge as-is out of the box.
 
@@ -82,17 +82,17 @@ gem 'kramdown', '~> 2.3'
 gem "kramdown-syntax-coderay"
 ```
 
-### Install
+### Bundle Install Gems
 
-Double-check this is the version of Kramdown you want. Then Make sure to stop the Jekyll server if it is already running.
-
-Run a bundler install.
+Double-check this is the version of Kramdown you want. Then Make sure to stop the Jekyll server if it is already running and run a bundle install.
 
 ```shell
 bundle install
 ```
 
-I'm running Debian Linux for this example, but you should get a similar result.
+You should be able install these with gem, but it gave me flack about missing dependencies. So I had to run a `bundle clean --force`, then bundle install instead to get around it.
+
+I'm running Linux for this example, but you should get a similar result if you are on Windows.
 
 ```shell
 Bundle complete! 7 Gemfile dependencies, 31 gems now installed.
