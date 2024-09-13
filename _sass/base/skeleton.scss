@@ -13,28 +13,17 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 // TODO: The min hight in the main container does not bump margin and padding in sub containers.
 #skeleton {
-    width: auto;
+    max-width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .main-container {
     margin: 0 auto;
-    width: 900px;
+    width: 100%;
+    max-width: $master-content-width;
+    min-height: $content-scale;
     background-color: $master-background;
-}
-
-@supports(max-width: $master-content-width) {
-    .main-container {
-        width: 100%;
-        max-width: $master-content-width;
-        min-height: $content-scale;
-    }
-
-    #skeleton {
-        width: 100%;
-        max-width: calc(100% - 30px);
-        margin-left: 15px;
-        margin-right: 15px;
-    }
 }
 
 h1 {
@@ -51,26 +40,6 @@ p, li {
 
 a {
     color: $master-cyan-accent;
-}
-
-.footer-container {
-    width: 100%;
-}
-
-.footer-content {
-    max-width: $master-content-width;
-    margin: 0 auto;
-    min-height: 290px;
-}
-
-.footer-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer-col {
-    width: 50%;
-    min-width: 250px;
 }
 
 .generic-date {

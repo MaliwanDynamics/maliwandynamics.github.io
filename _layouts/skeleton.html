@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
 {% include head.html %}
 
 <body id="lol-dis-body-id">
 
   {% include header.html %}
-  <main class="main-container" aria-label="Content">
+  <main aria-label="Content">
+    <div class="main-container">
 
-    <noscript>
+      <noscript>
+        <div class="noscript-styling">
+          <p>WARNING: This site will NOT work as intended without JavaScript Enabled.</p>
+          <p>Either your browser is outdated or JavaScript is disabled.</p>
+        </div>
+      </noscript>
 
-      <div class="noscript-styling">
-        <p>WARNING: This site will NOT work as intended without JavaScript Enabled.</p>
-        <p>Either your browser is outdated or JavaScript is disabled.</p>
-      </div>
-    </noscript>
+      <div id="skeleton">{{ content }}</div>
 
-    <div id="skeleton">{{ content }}</div>
+    </div>
   </main>
   {% include footer.html %}
 

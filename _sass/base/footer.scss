@@ -6,16 +6,22 @@
     min-height: $footer-height;
     max-width: $master-content-width;
     margin: 0 auto;
+
     background-color: $master-accent
 }
 
 .footer-content {
-    display: block;
-    @include flexium;
+    display: inline-block;
     width: 80%;
     margin: 0 auto;
     text-align: center;
     font-size: 17pt;
+}
+
+.social-footer {
+    @include flexium;
+    margin: 0 auto;
+    min-width: 200px;
 }
 
 .social-footer a {
@@ -32,12 +38,6 @@
     vertical-align: bottom;
     width: 3.3rem;
     margin: .3rem;
-}
-
-.social-footer {
-    @include flexium;
-    margin: 0 auto;
-    min-width: 200px;
 }
 
 .details-footer {

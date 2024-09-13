@@ -4,10 +4,10 @@
 }
 
 .header-content {
-    position: absolute;
     position: fixed;
     z-index: 100;
 
+    background-color: white;
     @include master-header-background;
 
     width: 100%;
