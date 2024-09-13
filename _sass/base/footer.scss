@@ -1,4 +1,5 @@
 .footer-container {
+
     @include flexium;
 
     font-family: $decor-font-family;
@@ -11,27 +12,21 @@
 }
 
 .footer-content {
-    display: inline-block;
-    width: 80%;
+
+    // @include flexium;
+
     margin: 0 auto;
     text-align: center;
     font-size: 17pt;
 }
 
 .social-footer {
-    @include flexium;
+    text-align: center;
     margin: 0 auto;
-    min-width: 200px;
 }
 
 .social-footer a {
     text-decoration: none;
-}
-
-@supports (transform: scale(1.1)) {
-    .social-footer a:hover img {
-        transform: scale(1.1);
-    }
 }
 
 .social-footer img {
@@ -41,11 +36,13 @@
 }
 
 .details-footer {
+
+    text-align: center;
     margin: 0 auto;
-    min-width: 200px;
 }
 
 .footer-end {
-    display: inline-block;
+    width: 100%;
+    text-align: center;
     font-size: 12px !important;
 }

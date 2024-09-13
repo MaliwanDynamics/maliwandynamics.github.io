@@ -3,15 +3,9 @@
     <div data-nosnippet class="footer-content">
 
         <section class="social-footer">
-            <a href="https://instagram.com/maliwandynamics/" target="_blank" draggable="false" rel="noopener noreferrer">
-                <img draggable="false"  src="/assets/img/social/ig-instagram-icon.svg" alt="{{ site.altImgUrl }}" />
-            </a>
-            <a href="https://x.com/maliwandynamics/" target="_blank" draggable="false"  rel="noopener noreferrer">
-                <img draggable="false"  src="/assets/img/social/twitter-square-color-icon.svg" alt="{{ site.altImgUrl }}" />
-            </a>
-            <a href="https://youtube.com/@MaliwanDynamics" target="_blank" draggable="false" rel="noopener noreferrer">
-                <img draggable="false"  src="/assets/img/social/youtube-app-icon.svg" alt="{{ site.altImgUrl }}" />
-            </a>
+        {% include components/linkage.html link="instagram.com/maliwandynamics/" image="/assets/img/social/ig-instagram-icon.svg" %}
+        {% include components/linkage.html link="x.com/maliwandynamics/" image="/assets/img/social/twitter-square-color-icon.svg" %}
+        {% include components/linkage.html link="youtube.com/@MaliwanDynamics" image="/assets/img/social/youtube-app-icon.svg" %}
         </section>
 
         <section class="details-footer">
