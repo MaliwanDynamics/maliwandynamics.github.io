@@ -12,15 +12,13 @@ categories:
 - blog
 - software
 ---
-The old “how do I center this f***ing thing” in raw CSS and HTML huh? Well, its a lot more simplistic that it feels at first. To this day, I still do not understand why many resources online make it appear more difficult that it is. I will go into more detail using other methods like grid and flexbox in another post. Keep it simple at first.
+The old “how do I center this f***ing thing” in raw CSS and HTML huh? Well, it's way more simplistic than it seems if you are new to CSS.
+
+To this day, I still do not understand why many resources online make it appear more difficult than it is. I will go into more detail using other methods like grid and flexbox in another post. Keep it simple at first.
 
 ## Basic Example
 
-In its most basic form, you just need a container to put the div inside of. Then set the div’s margin to:
-
-```
-margin: 0 auto;
-```
+In its most basic form, you all you need a container to put the div inside of. Then set the div’s margin to `margin: 0 auto;`
 
 To take it a bit further, you can create a CSS class to apply the margin to more than just a div tag.
 
@@ -59,7 +57,7 @@ To take it a bit further, you can create a CSS class to apply the margin to more
 
 You can center more than just a div with the margin auto trick. Here is an example to center everything in the main tag. This way you can have a uniform and centered content feel for every page.
 
-(Preference on adding CSS to a main tag will vary, not saying this is always best practice, just an example)
+As a side note, preference for adding CSS to a main tag in this manner will vary, so not saying this is the best practice, it's just an example. You could add the `.center-me` class to the main element instead (or any element) to avoid duplication.
 
 <a href="https://github.com/MaliwanDynamics/center-div">Full Example On Github</a>
 
