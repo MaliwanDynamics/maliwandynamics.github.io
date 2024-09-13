@@ -20,7 +20,7 @@ To this day, I still do not understand why many resources online make it appear 
 
 In its most basic form, all you need is a container to put the div inside of, then set the div’s margin to `margin: 0 auto;`
 
-To take it a bit further, can create a CSS class to apply the margin to more than just a div tags.
+To take it a bit further, create a CSS class so you can easily apply the margin to multiple elements.
 
 {% include /components/general-figure.html figureImg='/assets/img/post/sept-2024/center-div.png' %}
 
