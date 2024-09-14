@@ -1,10 +1,10 @@
 {% if page.imgUrl %}
-<figure class="figure">
-    <div class="figure-wrapper">
+<figure class="figure" draggable="false" >
+    <div class="figure-wrapper" draggable="false">
         <img src="{{ page.imgUrl }}" alt="{{ site.altImgUrl }}" draggable="false" />
     </div>
     {% if page.imgCaption %}
-    <figcaption>
+    <figcaption draggable="false">
         <p>{{ page.imgCaption }}
             {% if page.imgCaptionSrc %}
             <a href="{{ page.imgCaptionSrc }}">[source]</a>

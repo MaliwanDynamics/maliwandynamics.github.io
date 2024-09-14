@@ -1,4 +1,5 @@
-<div class="share-box">
+{% if page.url %}
+<div class="share-box" draggable="false">
     <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
         onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
         rel="noopener noreferrer" title="Share on Facebook">
@@ -34,3 +35,4 @@
         <img src="/assets/img/social/purple-mail-icon.svg" alt="{{ site.altImgUrl }}" />
     </a>
 </div>
+{% endif %}

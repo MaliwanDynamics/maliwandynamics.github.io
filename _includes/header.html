@@ -2,18 +2,18 @@
   <nav class="header-content">
     <div class="header-nav">
 
-      <div class="header-logo">
-        <a href="{{ site.url }}" draggable="false" rel="noopener noreferrer">
-          <img src="/assets/img/logo/med-logo-compressed.png" alt="{{ site.altImgUrl }}" rel="noopener noreferrer" />
+      <div class="header-logo" draggable="false">
+        <a href="{{ site.url }}" draggable="false" rel="noopener noreferrer" draggable="false">
+          <img src="/assets/img/logo/med-logo-compressed.png" alt="{{ site.altImgUrl }}" rel="noopener noreferrer" draggable="false" />
         </a>
       </div>
 
-      <ul class="top-menu">
+      <ul class="top-menu" draggable="false">
 
         <input type="checkbox" id="checkbox-toggle" />
         <label for="checkbox-toggle" class="hamburger">&#9776</label>
 
-        <div class="menu">
+        <div class="menu" draggable="false">
           <li>
             <a {% if page.name=="index.md" %} class="active-menu" {% endif %} draggable="false" href="{{ site.url }}"
               rel="noopener noreferrer">HOME</a>
