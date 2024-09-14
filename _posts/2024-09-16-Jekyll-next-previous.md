@@ -7,7 +7,7 @@ imgUrl: /assets/img/post/sept-2024/jekyll-next-prev-direction-head-img.jpg
 imgCaption: This Way Dude
 imgCaptionSrc: https://www.pexels.com/photo/yellow-arrow-led-signage-394377/
 
-date: 2024-08-16 12:00:00 -0400
+date: 2024-09-16 12:00:00 -0400
 categories:
 - blog
 - software
