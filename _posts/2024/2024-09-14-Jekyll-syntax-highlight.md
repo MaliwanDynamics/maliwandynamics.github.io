@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Jekyll Syntax Highlighting For Code Snippets
+title: Syntax Highlighting For Code Snippets In Jekyll
 imgUrl: /assets/img/post/sept-2024/syntax-highlight-computer-head-img.jpg
 
 imgCaption: Glowing Syntax
@@ -18,11 +18,11 @@ If you have no clue what I am talking about, checkout the [Markdown Guide](https
 
 If you are on [Github Pages](https://pages.github.com/), then I recommend using the default [Rouge](https://github.com/rouge-ruby/rouge) configuration. If you are already using [Karmdown](https://kramdown.gettalong.org/), then you can opt to use [Github Flavored Markdown (GFM)](https://github.github.com/gfm/) and set Rogue as your syntax highlighter.
 
-I had issues with Kramdown in conjunction with every other parser other than Rogue on Github Pages, which is why I am recommending Rouge as-is out of the box instead.
+I had issues with Kramdown in conjunction with every other parser other than Rogue on Github Pages, which is why I am recommending Rouge as-is instead.
 
-If that is not to your fancy or you are not on Github Pages, [Kramdown and Coderay](https://github.com/kramdown/syntax-coderay) together is another popular solution.
+If that is not to your fancy, or you are not on Github Pages, [Kramdown and Coderay](https://github.com/kramdown/syntax-coderay) together is another popular solution.
 
-Also try reading the documentation first if you feel lost, but if you are lazy and want the answer fast, here you go.
+Also, try reading the documentation first if you feel lost, but if you are lazy and want the answer fast, here you go.
 
 ## The Plain Rouge Option
 
@@ -67,7 +67,6 @@ Rouge will add a .highlight CSS class to the generated HTML of the code blocks. 
 - [Rouge Github](https://github.com/rouge-ruby/rouge)
 - [Rouge Jekyll Docs](https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting)
 
-
 ---
 ## The Kramdown Option
 
@@ -86,7 +85,7 @@ gem "kramdown-syntax-coderay"
 
 ### Bundle Install Gems
 
-Double-check this is the version of Kramdown you want. Then Make sure to stop the Jekyll server if it is already running and run a bundle install.
+Double-check this is the version of Kramdown you want. Then make sure to stop the Jekyll server if it is already running and run a bundle install.
 
 ```shell
 bundle install

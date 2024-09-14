@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Jekyll Next And Previous Previews
+title: Next And Previous Post Previews In Jekyll
 imgUrl: /assets/img/post/sept-2024/jekyll-next-prev-direction-head-img.jpg
 
 imgCaption: This Way Dude
@@ -21,7 +21,7 @@ So after some searching and tinkering I found it was quite simple.
 
 Turns out you can pass the entire `Page` with all its defined values into an includes HTML. Sort-of like passing in an object (I'm guessing) if you are familiar with [Object Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming). This way I can grab all the defined values declared within the post inside of a reusable includes.
 
-I'm definitely going to work on making it look better in the future. But it's still a prototype and it works.
+I'm definitely going to work on making it look better in the future, but it's still a prototype and it works.
 
 ## Example
 
