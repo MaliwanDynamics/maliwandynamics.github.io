@@ -14,9 +14,9 @@ categories:
 ---
 So you spun up a [Jekyll](https://jekyllrb.com/docs/) website and you need to add a code snippet to a new post. But wait! It's ugly as h*ll! Why? How do other websites get their code to look so pretty and shiny?
 
-If you no clue what I am talking about, checkout the [Markdown Guide](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) on it.
+If you have no clue what I am talking about, checkout the [Markdown Guide](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) on it.
 
-Well, if you are on [Github Pages](https://pages.github.com/), then I recommend using the default [Rouge](https://github.com/rouge-ruby/rouge) configuration. If you are already using [Karmdown](https://kramdown.gettalong.org/), then you can opt to use [Github Flavored Markdown (GFM)](https://github.github.com/gfm/) and set Rogue as your syntax highlighter.
+If you are on [Github Pages](https://pages.github.com/), then I recommend using the default [Rouge](https://github.com/rouge-ruby/rouge) configuration. If you are already using [Karmdown](https://kramdown.gettalong.org/), then you can opt to use [Github Flavored Markdown (GFM)](https://github.github.com/gfm/) and set Rogue as your syntax highlighter.
 
 I had issues with Kramdown in conjunction with every other parser other than Rogue on Github Pages, which is why I am recommending Rouge as-is out of the box instead.
 
