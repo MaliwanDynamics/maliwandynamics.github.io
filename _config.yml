@@ -5,7 +5,7 @@ title: Maliwan Dynamics
 description: More Knowledge More Freedom
 statement: More Knowledge More Freedom
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://maliwandynamics.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 altImgUrl: /assets/img/med-logo-compressed.png

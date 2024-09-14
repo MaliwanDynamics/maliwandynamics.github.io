@@ -12,13 +12,19 @@ categories:
 - blog
 - software
 ---
-The old “how do I center this f***ing thing” in raw CSS and HTML huh? Well, it's way more simplistic than it seems if you are new to CSS.
+The old “how do I center this f***ing thing in raw CSS and HTML” huh? Well, it's way more simplistic than it seems if you are new to CSS.
 
-To this day, I still do not understand why many resources online make it appear more difficult than it is. I will go into more detail using other methods like grid and flexbox in another post. Keep it simple at first.
+To this day, I do not understand why many resources online make it appear more difficult than it is.
+
+There are already troves of tutorials on HTML and CSS across the web, [W3](https://www.w3schools.com/css/default.asp) being one of the most prevalent sites if you are not aware.
+
+Nevertheless, I will go into more detail using other methods like grid and flexbox in another post. Just keep it simple at first if you are just learning.
 
 ## Basic Example
 
-In its most basic form, all you need is a container to put the div inside of, then set the div’s margin to `margin: 0 auto;`
+In its most basic form, all you need is a container to put the div inside of, then set the div’s margin to auto.
+
+`margin: 0 auto;`
 
 To take it a bit further, create a CSS class so you can easily apply the margin to multiple elements.
 
@@ -27,29 +33,29 @@ To take it a bit further, create a CSS class so you can easily apply the margin 
 ### The HTML
 ```html
 <head>
-    <title>Raw CSS HTML</title>
-    <link rel="stylesheet" type="text/css" href="center-div-style.css">
+	<title>Raw CSS HTML</title>
+	<link rel="stylesheet" type="text/css" href="center-div-style.css">
 </head>
 <body>
-    <div class="center-me size-adjusted">
-        <p>I am in a centered div!</p>
-    </div>
+	<div class="center-me size-adjusted">
+    	<p>I am in a centered div!</p>
+	</div>
 
-    <div class="not-centered size-adjusted">
-        <p>I am NOT in a centered div!</p>
-    </div>
+	<div class="not-centered size-adjusted">
+    	<p>I am NOT in a centered div!</p>
+	</div>
 </body>
 ```
 
 ### The CSS
 ```css
 .center-me {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 /* Just to make the div visible */
 .size-adjusted {
-    max-width: 15rem;
-    height: 12rem;
+	max-width: 15rem;
+	height: 12rem;
 }
 ```
 
@@ -67,62 +73,62 @@ As a side note, preference for adding CSS to a main tag in this manner will vary
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Raw CSS HTML</title>
-        <link rel="stylesheet" type="text/css" href="center-div-style.css">
-    </head>
-    <body>
-        <main class="main-content">
-            <div class="center-me size-adjusted">
-                <p>I am in a centered div!</p>
-            </div>
+	<head>
+    	<title>Raw CSS HTML</title>
+    	<link rel="stylesheet" type="text/css" href="center-div-style.css">
+	</head>
+	<body>
+    	<main class="main-content">
+        	<div class="center-me size-adjusted">
+            	<p>I am in a centered div!</p>
+        	</div>
     
-            <div class="not-centered size-adjusted">
-                <p>I am NOT in a centered div!</p>
-            </div>
-        </main>
-    </body>
+        	<div class="not-centered size-adjusted">
+            	<p>I am NOT in a centered div!</p>
+        	</div>
+    	</main>
+	</body>
 </html>
 ```
 
 ### The CSS
 ```css
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-    width: 100vw;
-    height: 100vh;
+	width: 100vw;
+	height: 100vh;
 }
 
 .main-content {
 
-    margin: 0 auto;
+	margin: 0 auto;
 
-    max-width: 900px;
-    height: 100%;
+	max-width: 900px;
+	height: 100%;
 
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: lightgray;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: lightgray;
 }
 
 .center-me {
     
-    margin: 0 auto;
+	margin: 0 auto;
 
-    background-color: lightgreen;
+	background-color: lightgreen;
 }
 
 .not-centered {
-    background-color: lightcoral;
+	background-color: lightcoral;
 }
 
 /* Just to make the div visible */
 .size-adjusted {
-    max-width: 15rem;
-    height: 13rem;
+	max-width: 15rem;
+	height: 13rem;
 }
 ```

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Video
-permalink: /video
 ---
 
 <div class="no-select post-card-container">

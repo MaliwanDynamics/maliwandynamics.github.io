@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About
-permalink: /about
 ---
 What the heck is the point of this website?
 
