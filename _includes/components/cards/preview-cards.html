@@ -1,0 +1,8 @@
+<section>
+    {% if page.next %}
+    {% include /components/cards/post-card.html data=page.next disclaimer="NEXT" %}
+    {% endif %}
+    {% if page.previous %}
+    {% include /components/cards/post-card.html data=page.previous disclaimer="PREVIOUS" %}
+    {% endif %}
+</section>

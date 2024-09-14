@@ -41,12 +41,7 @@ layout: skeleton
     {{ content }}
   </section>
   <section>
-    {% if page.next %}
-    {% include /components/post-card.html data=page.next disclaimer="NEXT" %}
-    {% endif %}
-    {% if page.previous %}
-    {% include /components/post-card.html data=page.previous disclaimer="PREVIOUS" %}
-    {% endif %}
+    {% include /components/cards/preview-cards.html %}
   </section>
 
 </article>
