@@ -19,19 +19,19 @@ The main issue was not that I couldn't make next and previous links, it was that
 
 So after some searching and tinkering I found it was quite simple.
 
-Turns out you can pass the entire `Page` with all its defined values into an includes HTML. Sort-of like passing in an object (I'm guessing) if you are familiar with [Object Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming). This way I can grab all the defined values declared within the post inside of a reusable includes.
+Turns out you can pass the entire `Page` with all its defined values into an includes HTML. Sort-of (I'm guessing) like passing in an object if you are familiar with [Object Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming). This way I can grab all the defined values declared within the post inside of a reusable includes.
 
-I'm definitely going to work on making it look better in the future, but it's still a prototype and it works.
+I'm definitely going to work on making it look better in the future, but it's still a prototype and it works for now.
 
 ## Example
 
 First, evaluate what properties you need for a preview, and what you have commonly defined on each post. All I needed was the title, categories, image/thumbnail, and miscellaneous details like the URL.
 
-This could get a bit more challenging if you need more details than just that in your preview. Maybe I'll figure out a way to extract more data in another post or link to something I find in the future.
+This could get a bit more challenging if you need more details than general metadata in your preview. Maybe I'll figure out a way to extract more data in another post or link to something I find in the future.
 
 Jekyll pages allow you to grab the values from the previous and next post directly from the reference passed into an includes. On the other hand I wanted my includes to be more generic than that. So in this example I am passing in the entirety of the previous and next pages into the includes so that the code does not have to be aware of which page it's on.
 
-I think this allows for a bit more reuse and decouples it from whatever page is implementing the preview functionality so it's not tied directly to this specific use case.
+I think this allows for a bit more reuse and decouples it from whatever page is implementing the preview functionality. Hopfully keeping the preview from tied directly to this specific use case.
 
 ### Example Structure
 
@@ -51,8 +51,8 @@ This represents a markdown file you have in your `/_post/` directory.
 ---
 layout: post
 
-title: Jekyll Syntax Highlighting For Code Snippets
-imgUrl: /assets/img/post/sept-2024/syntax-highlight-computer-head-img.jpg
+title: An Epic title
+imgUrl: /assets/img/blah.jpg
 
 date: 2024-09-14 12:00:00 -0400
 categories:
@@ -99,7 +99,7 @@ The `data` field has all the page properties accessible in the includes. If you 
 {% raw %}
 ```html
 {% if include.data %}
-<a class="post-card" href="{{ include.data.url }}" rel="noopener noreferrer" draggable="false">
+<a class="post-card" href="{{ include.data.url }}" rel="noopener noreferrer">
   <div class="post-card-item">
 	{% if include.disclaimer %}<p>{{ include.disclaimer }}</p>{% endif %}
 	<p>{{ include.data.title }}</p>
@@ -127,63 +127,58 @@ The `data` field has all the page properties accessible in the includes. If you 
 
 ### Post Card SASS
 
-Here is some of the boilerplate CSS I am using for your convenience. It's rather specific to my application and will need to be adjusted to work with your own code.
+Here is some of the boilerplate CSS I am using for your convenience. It's rather specific to my application and will need to be adjusted to work with your own code. Ok! yes the CSS is gross, its just an example, go use a CSS framework like Boostrap or something.
 
 ```css
 .post-card-container {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 .post-card {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-	align-items: center;
-	justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-	text-decoration: none;
-	font-weight: bold;
+  text-decoration: none;
+  font-weight: bold;
 
-	width: 100%;
-	min-width: 50px;
-
-	height: auto;
-	margin-top: 20px;
-
-	color: $master-accent-grey;
-
-	border-top: 1px solid $master-accent-light-grey;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-top: 1px solid black;
 }
 
 .post-card p {
-	padding: 0 !important;
+  padding: 0 !important;
 }
 
 .post-card:hover {
-	background-color: $master-accent;
-	color: $master-accent-black;
+  background-color: whitesmoke;
 }
 
 .post-card-item {
-	padding: 5px;
-	display: inline-block;
+  width: calc(100% / 2 - 10px);
+  min-width: 200px;
 
-	width: calc(100% / 2 - 10px);
-	min-width: 200px;
+  padding: 5px;
+  display: inline-block;
 }
 
 .post-card-img {
-	width: 100%;
-	height: 220px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
+  width: 100%;
+  height: 220px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 @media (max-width: 768px) {
-	.post-card-item {
-    	width: 100%;
-	}
+  .post-card-item {
+    width: 100%;
+  }
 }
 ```
 

@@ -1,16 +1,16 @@
 {% if include.figureImg %}
 <figure class="figure" draggable="false">
-    <div class="general-figure-wrapper" draggable="false">
-        <img src="{{ include.figureImg }}" alt="{{ site.altImgUrl }}" draggable="false" />
-    </div>
-    {% if figureCap %}
-    <figcaption draggable="false">
-        <p>{{ figureCap }}
-            {% if page.imgCaptionSrc %}
-            <a href="{{ figureCapSrc }}">[source]</a>
-            {% endif %}
-        </p>
-    </figcaption>
-    {% endif %}
+  <div class="general-figure-wrapper" draggable="false">
+    <img src="{{ include.figureImg }}" alt="{{ site.altImgUrl }}" draggable="false" />
+  </div>
+  {% if figureCap %}
+  <figcaption draggable="false">
+    <p>{{ figureCap }}
+      {% if page.imgCaptionSrc %}
+      <a href="{{ figureCapSrc }}">[source]</a>
+      {% endif %}
+    </p>
+  </figcaption>
+  {% endif %}
 </figure>
 {% endif %}

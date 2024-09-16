@@ -1,52 +1,49 @@
 .post-card-container {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .post-card {
-    @include flexium;
+  @include flexium;
 
-    text-decoration: none;
-    font-weight: bold;
+  text-decoration: none;
+  font-weight: bold;
 
-    width: 100%;
-    min-width: 50px;
+  width: 100%;
+  min-width: 50px;
 
-    height: auto;
-    margin-top: 20px;
+  height: auto;
+  margin-top: 5rem;
 
-    color: $master-accent-grey;
-    border-top: 1px solid $master-accent-light-grey;
+  color: $master-accent-grey;
+  border-top: 1px solid $master-accent-light-grey;
 }
 
 .post-card p {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 .post-card:hover {
-    background-color: $master-accent;
-    color: $master-accent-black;
+  background-color: $master-accent;
+  color: $master-accent-black;
 }
 
 .post-card-item {
-    padding: 5px;
-    display: inline-block;
+  width: calc(100% / 2 - 10px);
+  min-width: 200px;
 
-    width: calc(100% / 2 - 10px);
-    min-width: 200px;
+  padding: 5px;
+  display: inline-block;
 }
 
 .post-card-img {
+  width: 100%;
+  height: 220px;
 
-    width: 100%;
-    height: 220px;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  @include background-cover-center;
 }
 
 @media (max-width: 768px) {
-    .post-card-item {
-        width: 100%;
-    }
+  .post-card-item {
+    width: 100%;
+  }
 }

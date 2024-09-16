@@ -1,35 +1,44 @@
-
 @mixin display-align-center {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 @mixin flexium {
-    display: flex;
-    flex-wrap: wrap;
-    @include display-align-center;
+  display: flex;
+  flex-wrap: wrap;
+  @include display-align-center;
 }
 
 @mixin flexium-rev {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    @include display-align-center;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  @include display-align-center;
 }
 
 @mixin blocking {
-    display: inline-block;
-    @include display-align-center;
+  display: inline-block;
+  @include display-align-center;
+}
+
+@mixin background-cover-center {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+@mixin no-select-mix {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .no-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  @include no-select-mix;
 }
 
 .no-pointer-event {
-    pointer-events: none;
+  pointer-events: none;
 }

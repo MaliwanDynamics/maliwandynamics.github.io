@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $decor-font-family;
+}
+h1 {
+    font-size: 2.1rem;
+}
+p, li, a {
+    font-size: $default-paragraph-font-size;
+}
+a {
+    color: $master-cyan-accent;
+}
+@media (max-width: 720px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+}

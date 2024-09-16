@@ -50,15 +50,17 @@ Once obtained, add it to a CSS file in your project and import it. I went the SC
 
 ### 1. Override The `.highlight` CSS Class
 
-Rouge will add a .highlight CSS class to the generated HTML of the code blocks. Override it to add flavor to the blocks.
+Rouge will add a .highlight CSS class to the generated HTML of the code blocks. Override it to add additional flavor to the blocks.
 
 ```css
 .highlight {
-    background-color: lightblue;
-    padding: 1rem;
-    border-radius: 10px;
+  padding: .3rem;
+}
 
-    overflow-x: scroll;
+.highlighter-rouge {
+  background-color: $master-accent;
+  border-radius: 10px;
+  overflow-x: scroll;
 }
 ```
 
@@ -128,7 +130,7 @@ Keep in mind this is a minimal configuration, there are tons of other configurat
 
 ### 1. Override The `.code` CSS Class
 
-Coderay will add a .code CSS class to the generated HTML of the code blocks. Override it to add flavor to the blocks.
+Coderay will add a .code CSS class to the generated HTML of the code blocks. Override it to add additional flavor to the blocks.
 
 ```css
 .code {

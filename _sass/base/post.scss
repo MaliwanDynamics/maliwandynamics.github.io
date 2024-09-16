@@ -8,11 +8,6 @@
     width: 100%;
 }
 
-.post-header {
-    margin-top: .7rem;
-    margin-bottom: .7rem;
-}
-
 .post-content p {
     padding: 1rem 0 1rem;
     line-height: 1.8em;
@@ -27,15 +22,17 @@
     padding-top: .8rem;
     padding-bottom: .1rem;
 }
-
 .post-content h1 {
     font-size: 20pt;
 }
-
 .post-content h2 {
     font-size: 18pt;
 }
-
 .post-content h3 {
     font-size: 16pt;
+}
+
+.post-header {
+    margin-top: .7rem;
+    margin-bottom: .7rem;
 }
