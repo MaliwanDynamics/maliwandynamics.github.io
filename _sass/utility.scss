@@ -1,96 +1,25 @@
+
+@mixin display-align-center {
+    align-items: center;
+    justify-content: center;
+}
+
 @mixin flexium {
     display: flex;
     flex-wrap: wrap;
-
-    align-items: center;
-    justify-content: center;
+    @include display-align-center;
 }
 
 @mixin flexium-rev {
     display: flex;
     flex-wrap: wrap-reverse;
-
-    align-items: center;
-    justify-content: center;
+    @include display-align-center;
 }
 
 @mixin blocking {
     display: inline-block;
-    align-items: center;
-    justify-content: center;
+    @include display-align-center;
 }
-
-.col-3 {
-    width: calc(100% / 3);
-}
-
-.col-3-fw {
-    width: calc(100% / 3);
-    @include flexium;
-    flex-wrap: nowrap;
-}
-
-.col-3-f {
-    width: calc(100% / 3);
-    @include flexium;
-}
-
-.col-2 {
-    justify-content: center;
-    width: calc(100% / 2);
-}
-
-.col-b {
-    @include blocking;
-    width: calc(100% / 2);
-    // width: 100%;
-}
-
-.col-2-fw {
-    width: calc(100% / 2);
-    @include flexium;
-}
-
-.col-2-f {
-    width: calc(100% / 2);
-    @include flexium;
-    flex-wrap: nowrap;
-}
-
-.row-fw {
-    @include flexium;
-    width: 100%;
-}
-
-.cent {
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-}
-
-.w-100 {
-    width: 100%;
-}
-
-.w-90 {
-    width: 90%;
-}
-
-.pad-b-10 {
-    padding-bottom: 100px;
-}
-
-.h-50vh {
-    height: 50vh;
-}
-
-.vh-50 {
-    height: 50vh;
-}
-
-.mhpx-400 {
-    min-height: 400px;
-} 
 
 .no-select {
     -webkit-touch-callout: none;

@@ -2,13 +2,13 @@
   <nav class="header-content">
     <div class="header-nav">
 
-      <div class="header-logo" draggable="false">
+      <div class="header-logo">
         <a href="{{ site.url }}" draggable="false" rel="noopener noreferrer" draggable="false">
           <img src="/assets/img/logo/med-logo-compressed.png" alt="{{ site.altImgUrl }}" rel="noopener noreferrer" draggable="false" />
         </a>
       </div>
 
-      <ul class="top-menu" draggable="false">
+      <ul class="top-menu">
 
         <input type="checkbox" id="checkbox-toggle" />
         <label for="checkbox-toggle" class="hamburger">&#9776</label>
@@ -23,7 +23,7 @@
               rel="noopener noreferrer">BLOG</a>
           </li>
           <li>
-            <a {% if page.name=="videos.md" %} class="active-menu" {% endif %} draggable="false" href="/video"
+            <a {% if page.name=="video.md" %} class="active-menu" {% endif %} draggable="false" href="/video"
               rel="noopener noreferrer">VIDEO</a>
           </li>
           <li>

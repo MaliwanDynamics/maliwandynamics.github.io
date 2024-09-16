@@ -4,11 +4,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">  
   <meta name="robots" content="noarchive">
   <meta http-equiv="content-language" content="en">
-  {% seo %}
+
   {% if page.videoId && site.yt_img_url_base %}
   <meta property="og:image" content="{{ site.yt_img_url_base }}{{ page.videoId }}/0.jpg" />
   {% else %}
-  <meta property="og:image" content="{{ site.url }}/assets/img/logo/med-logo.png" />
+
+    {% if page.imgUrl %}
+    <meta property="og:image" content="{{ site.url }}{{ page.imgUrl }}" />
+    {% else %}
+    <meta property="og:image" content="{{ site.url }}/assets/img/logo/med-logo.png" />
+    {% endif %}
+
   {% endif %}
   {% if page.author %}
   {% else %}
@@ -17,7 +23,9 @@
   {% if page.twitterUser %}
   <meta property="twitter:creator" content="{{ site.twitterUser }}" />
   {% endif %}
-  <link rel="stylesheet" href="/assets/css/style.css">
 
+  {% seo %}
+
+  <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="shortcut icon" type="img/x-icon" href="/favicon.ico">
 </head>

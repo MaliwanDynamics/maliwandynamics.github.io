@@ -7,7 +7,7 @@
     position: fixed;
     z-index: 100;
 
-    background-color: white;
+    background-color: whitesmoke;
     @include master-header-background;
 
     width: 100%;
@@ -37,13 +37,12 @@
 .top-menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding-right: 10px;
 }
 
 .menu li {
     list-style: none;
-    width: auto;
+    padding-left: 1rem;
 }
 
 .menu a {
@@ -65,7 +64,6 @@
 
 .menu {
     display: flex;
-    gap: 1em;
 }
 
 .header-logo {
@@ -74,7 +72,6 @@
 }
 
 .header-logo img {
-    width: auto;
     height: 100%;
 }
 

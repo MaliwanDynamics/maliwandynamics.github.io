@@ -24,6 +24,8 @@ Disallow: /assets/
 Disallow: /assets&
 Disallow: /video/
 Disallow: /video$
+Disallow: /privacy/
+Disallow: /privacy$
 Disallow: /.gif$
 Disallow: /.jpg$
 Disallow: /.jpeg$
