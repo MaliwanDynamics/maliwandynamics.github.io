@@ -1,9 +1,11 @@
 
 .highlight {
-    background-color: $master-accent;
-    padding: .6rem;
-    border-radius: 10px;
+    padding: .3rem;
+}
 
+.highlighter-rouge {
+    background-color: $master-accent;
+    border-radius: 10px;
     overflow-x: scroll;
 }
 
