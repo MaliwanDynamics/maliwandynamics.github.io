@@ -153,7 +153,7 @@ Coderay will add a .code CSS class to the generated HTML of the code blocks. Ove
 
 ### Raw Liquid
 
-If you are trying to add a code snippet with some Jekyll Liquid code, chances are the code between the braces will be executed. Even inside the code element!
+If you are trying to add a code snippet with some Jekyll Liquid/Ruby code, chances are the code between the braces will be executed. Even inside the code element!
 
 In this case you can put a `raw` block around the snippet to ensure Jekyll does not execute it. For example,
 
@@ -161,6 +161,6 @@ In this case you can put a `raw` block around the snippet to ensure Jekyll does 
 
 ### Markdown Code Fences
 
-If you are trying to use the 3 tildies to block out a snippet, the highlighter you are using may not support it out of the box. You may need to use some Liquid to initiate it like so.
+If you are trying to use the 3 tildies to block out a snippet, the highlighter you are using may not support it out of the box. You may need to use some code to initiate it like so.
 
 {% include /components/general-figure.html figureImg='/assets/img/post/sept-2024/jekyll-highlight-tag.png' %}

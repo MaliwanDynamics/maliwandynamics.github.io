@@ -14,15 +14,13 @@ categories:
 ---
 The old “how do I center this f***ing thing in raw CSS and HTML” huh? Well, it's way more simplistic than it seems if you are new to CSS.
 
-To this day, I do not understand why many resources online make it appear more difficult than it is.
-
-There are already troves of tutorials on HTML and CSS across the web, [W3](https://www.w3schools.com/css/default.asp) being one of the most prevalent sites if you are not aware.
+I don't understand why many resources online make it appear more difficult than it is. There are already troves of fantastic tutorials on HTML and CSS across the web, [W3](https://www.w3schools.com/css/default.asp) being one of the most prevalent.
 
 Nevertheless, I will go into more detail using other methods like grid and flexbox in another post. Just keep it simple at first if you are just learning.
 
 ## Basic Example
 
-In its most basic form, all you need is a container to put the div inside of, then set the div’s margin to auto.
+In its most basic form, all you need is a container to put the element you are trying to center in, then set the element’s margin to auto.
 
 `margin: 0 auto;`
 

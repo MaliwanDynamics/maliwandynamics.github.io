@@ -31,7 +31,7 @@ This could get a bit more challenging if you need more details than general meta
 
 Jekyll pages allow you to grab the values from the previous and next post directly from the reference passed into an includes. On the other hand I wanted my includes to be more generic than that. So in this example I am passing in the entirety of the previous and next pages into the includes so that the code does not have to be aware of which page it's on.
 
-I think this allows for a bit more reuse and decouples it from whatever page is implementing the preview functionality. Hopfully keeping the preview from tied directly to this specific use case.
+I think this allows for a bit more reuse and decouples it from whatever page is implementing the preview functionality. I have not fully tested this, but hopfully this keeps the preview from being tied directly to this specific use case.
 
 ### Example Structure
 
