@@ -35,8 +35,14 @@
 
 .hero-header { 
     @include flexium-rev;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    background-color: $master-background;
+    border-radius: $master-border-radius;
 }
 
 .home-img {

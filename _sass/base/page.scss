@@ -1,16 +1,30 @@
 .page-container {
+    width: 100%;
+
+    background-color: $master-background;
+
     margin: 0 auto;
-    padding-bottom: 25px;
-    padding-top: 25px
+    padding: 0;
+    margin: 0;
 }
 
 .page-header {
-    margin: 0 auto;
     text-align: center;
+
+    // background-color: $master-background;
+    border-radius: $master-border-radius;
+
+    padding: 15px;
 }
 
 .page-content {
-    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    // background-color: $master-background;
+    border-radius: $master-border-radius;
+
+    padding: 15px;
 }
 .page-content p {
     padding: 1rem 0 1rem;

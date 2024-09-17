@@ -1,5 +1,5 @@
 .header-container {
-    width: 100%;
+    // width: $master-content-width;
     min-height: $header-height;
 }
 
@@ -7,14 +7,9 @@
     position: fixed;
     z-index: 100;
 
-    background-color: whitesmoke;
-    @include master-header-background;
-
     width: 100%;
     margin: 0 auto;
     height: $header-height;
-
-    border-bottom: 1px solid $master-accent-grey;
 }
 
 .header-nav {
@@ -29,7 +24,13 @@
     padding-left: $master-padding;
     padding-right: $master-padding;
 
+    background-color: $master-background;
+    @include master-header-background;
+
     font-family: $decor-font-family;
+
+    border: 1px $master-accent-grey;
+    border-style: none solid solid solid;
 
     height: 100%;
 }
@@ -46,7 +47,7 @@
 }
 
 .menu a {
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: bold;
     text-decoration: none;
     color: $master-accent-grey;

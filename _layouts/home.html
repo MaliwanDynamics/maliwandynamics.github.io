@@ -2,9 +2,7 @@
 layout: skeleton
 ---
 <div class="no-select home-container">
-
   <section class="hero-header-container">
-
     <div class="hero-header">
 
       <div class="home-words">
@@ -26,11 +24,14 @@ layout: skeleton
       </div>
 
     </div>
-
   </section>
 
   <section class="home-content">
+    <div data-nosnippet class="no-select post-card-container">
+      {% for post in site.posts limit: 10 %}
+      {% include components/cards/post-card.html data=post %}
+      {% endfor %}
+    </div>
     {{ content }}
   </section>
-
 </div>

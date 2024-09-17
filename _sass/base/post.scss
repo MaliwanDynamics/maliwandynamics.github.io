@@ -1,11 +1,13 @@
 .post-container {
     margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    max-width: 100%;
 }
 
 .post-content {
-    width: 100%;
+    background-color: $master-background;
+    border-radius: $master-border-radius;
+
+    padding: 15px;
 }
 
 .post-content p {
@@ -35,4 +37,9 @@
 .post-header {
     margin-top: .7rem;
     margin-bottom: .7rem;
+
+    background-color: $master-background;
+    border-radius: $master-border-radius;
+
+    padding: 15px;
 }
