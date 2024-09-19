@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Filthy Java Coder Starts Learning Go | Ep1
+title: Java Coder Attempts GO | Ep1
 
 imgCaption: Where To GO?
 videoId: NH4zvUjNExM
@@ -13,7 +13,7 @@ categories:
 - video
 ---
 
-I have heard many great things (and some odd things) about Golang, so I had to try it out. This video and post begin my journey to trying out GO and hopefully making it my daily driver if I like it.
+I have heard many great things (and some odd things) about Golang, so I had to try it out. This video and post begin my journey to learning GO and hopefully making it my daily driver if I like it.
 
 Before I begin, however, if you want a picture perfect set of tutorials or tips and tricks on GO, let me save you time. "GO" Check out these guys instead!
 - [Melkey](https://www.youtube.com/@MelkeyDev)
