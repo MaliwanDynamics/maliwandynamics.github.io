@@ -15,7 +15,7 @@
   {% if include.data.videoId %}
   <div class="post-card-item">
     <div class="post-card-img"
-      style="background-image: url({{ site.yt_img_url_base }}{{ include.data.videoId }}/0.jpg)"></div>
+      style="background-image: url({{ site.yt_img_url_base }}{{ include.data.videoId }}/{{ include.data.videoImg }})"></div>
   </div>
   {% else if include.data.imgUrl %}
   <div class="post-card-item">
