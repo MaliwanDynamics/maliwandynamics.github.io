@@ -1,4 +1,17 @@
 {% if page.videoId %}
-<iframe class="video-iframe" allow="fullscreen" src="{{ site.yt_url_watch }}{{ page.videoId }}"
-  draggable="false"></iframe>
+<figure class="figure no-select" draggable="false">
+  <div class="figure-wrapper" draggable="false">
+    <iframe class="video-iframe" allow="fullscreen" src="{{ site.yt_url_watch }}{{ page.videoId }}"
+      draggable="false"></iframe>
+  </div>
+  {% if page.imgCaption %}
+  <figcaption draggable="false">
+    <p>{{ page.imgCaption }}
+      {% if page.imgCaptionSrc %}
+      <a href="{{ page.imgCaptionSrc }}">[source]</a>
+      {% endif %}
+    </p>
+  </figcaption>
+  {% endif %}
+</figure>
 {% endif %}
