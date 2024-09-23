@@ -13,7 +13,7 @@ categories:
 - software
 ---
 
-I was having difficulty making a next and previous preview at the end of each post for my site using Jekyll.
+I was having difficulty making a next and previous preview at the end of each post using Jekyll.
 
 The main issue was not that I couldn't make next and previous links, it was that I couldn't find a more concise way to hydrate next and previous cards with an image preview based on the corresponding post. In other words, I wanted to make it pretty.
 

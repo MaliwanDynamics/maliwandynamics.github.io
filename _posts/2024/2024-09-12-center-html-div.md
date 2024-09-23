@@ -16,7 +16,7 @@ The old “how do I center this f***ing thing in raw CSS and HTML” huh? Well, 
 
 I don't understand why many resources online make it appear more difficult than it is. There are already troves of fantastic tutorials on HTML and CSS across the web, [W3](https://www.w3schools.com/css/default.asp) being one of the most prevalent.
 
-Nevertheless, I will go into more detail using other methods like grid and flexbox in another post. Just keep it simple at first if you are just learning.
+I will go into more detail using other methods like grid and flexbox in another post. Keep it simple at first if you are learning.
 
 ## Basic Example
 
@@ -59,7 +59,7 @@ To take it a bit further, create a CSS class so you can easily apply the margin 
 
 ## Full Example With Content Wrapper
 
-You can center more than div elements with the margin auto trick. Here is an example to center everything in the main element. This way you can have a uniform and centered content feel for every page.
+You can center more than div elements with the margin auto trick. Here is an example to center everything in the main element. This allows for a more uniform content feel which can be applied to every page.
 
 As a side note, preference for adding CSS to a main tag in this manner will vary, so I'm not saying this is the best practice, it's just an example. You could add the `.center-me` class to the main element instead (or any element) to avoid duplication.
 

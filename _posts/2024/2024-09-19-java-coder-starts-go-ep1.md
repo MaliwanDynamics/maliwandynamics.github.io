@@ -14,9 +14,9 @@ categories:
 - video
 ---
 
-I have heard many great things (and some odd things) about Golang, so I had to try it out. This video and post begin my journey to learning GO and hopefully making it my daily driver if I like it.
+I have heard many great things (and some odd things) about the GO programming language, so I had to try it out. This video and post begin my journey to learning GO and hopefully making it my daily driver if I like it.
 
-Before I begin, however, if you want a picture perfect set of tutorials or tips and tricks on GO, let me save you time. "GO" Check out these guys instead!
+Before I begin, however, if you want a picture perfect set of tutorials or tips and tricks on GO, let me save you time. "GO" Check out these YouTube channels instead!
 - [Melkey](https://www.youtube.com/@MelkeyDev)
 - [Golang Dojo](https://www.youtube.com/@GolangDojo)
 
