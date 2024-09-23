@@ -30,3 +30,13 @@
     font-size: 12pt;
     padding: 0 !important;
 }
+
+.bio-figure-wrapper {
+    width: 100%;
+    @include flexium;
+}
+
+.bio-figure-wrapper img {
+    margin: 0 auto;
+    min-width: 15rem;
+}
